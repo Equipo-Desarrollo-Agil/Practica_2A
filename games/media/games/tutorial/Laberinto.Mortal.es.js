@@ -45,6 +45,26 @@ undum.game.situations = {
         \
         <p><a href='escena2'>Solo hay un camino asi que seguiré por aquí.</a></p>"
     ),
+    escena2:new undum.SimpleSituation(
+      "<h1>Esquina a torcer</h1>\
+      <p>Has decidido seguir el camino sin saber lo que te espera, ya que no\
+       te queda otra opción. Te da ansiedad estar encerrada en ahí, un sitio\
+       desconocido, sin saber cuánto tiempo vas a permanecer dentro, sin saber\
+       cómo llegaste ni cómo sobrevivir a este tiempo.</p>\
+       <img src='media/games/tutorial/esquina.jpg' class='float_left'width = 200 heigth = 150>\
+       <p>Seguir las luces del pasilllo te ha llevado a su final, llegaste a\
+       la esperada esquina... Debes seguir para conocer la razón estas ahí\
+       encerrada. Decidida te dispones a girarte hacia la derecha para ver\
+       qué es lo que te depara este misterioso laberinto.\
+       \
+      ¿Qué es eso? Un gran destello te nubla la vista tanto, que sientes un\
+      ligero mareo, demasiada luz en un lugar tan cerrado.\
+      <p><a href='escena3'>Quieres descubrir qué es lo que brilla con tanta intensidad.</a></p>"
+    ),
+    escena3:new undum.SimpleSituation(
+      "<h1>El enlace va</h1>\
+      <p></p>"
+    ),
 
     // NB: The 'hub' situation which is the main list of topics, is
     // defined wholly in the HTML file, and doesn't have an entry in

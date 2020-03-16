@@ -62,8 +62,34 @@ undum.game.situations = {
       <p><a href='escena3'>Quieres descubrir qué es lo que brilla con tanta intensidad.</a></p>"
     ),
     escena3:new undum.SimpleSituation(
-      "<h1>El enlace va</h1>\
-      <p></p>"
+      "<h1>La moneda</h1>\
+      <img src='media/games/tutorial/moneda.jpg' class='float_right' width = 350 heigth = 350>\
+      <p>Aturdida al girar la esquina y curiosa de saber que era lo que tanto brillaba\
+      vió en el lado derecho del pasillo algo redondo y dorado... es... UNA <a href='./Monedas' >MONEDA</a> .\
+      Justo al lado, estaba colocado otro curioso papel en el que desvelaba: </p>\
+      <p><i> Te has quedado impacta al ver esta gran luminusidad, ¿verdad?\
+      Verás que para que te encuentres con la motivación de saber que cada vez estás\
+      más cerca de la salida y ser por fin libre, a lo largo del laberinto te encontrarás\
+      5 monedas, que te aseguro que no serán algunas nada fácil de encontrar, también tienes\
+      la posibilidad de no recogerlas, pero con ellas te sentirás más seguro. ¡SUERTE!</i></p>\
+      <p>Una vez pensaste si recoger la moneda, te encuentras dos caminos, cada uno con un cartel\
+      un poco peculiar, <a href='escena4'>Camino de los siniestros</a> o <a href='escena5'>Camino de la flor de la vida.</a></p>"
+      {
+            actions:{
+              "Monedas": function(character, system, to) {
+                system.setQuality("Monedas", 1);
+              }
+            },
+            exit: function(character, system, to) {
+                system.IntergerQuality("Monedas", numeric.qualities.monedas+1);
+              }
+    ),
+
+    escena4:new undum.SimpleSituation(
+      "<h1>TOCA HACER</h1>"
+    ),
+    escena5:new undum.SimpleSituation(
+      "<h1>TOCA HACER</h1>"
     ),
 
     // NB: The 'hub' situation which is the main list of topics, is

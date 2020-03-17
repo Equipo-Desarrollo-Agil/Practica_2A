@@ -134,6 +134,8 @@ undum.game.situations = {
             actions:{
               "menosmoneda": function(character, system, to) {
                 system.setQuality("moneda", character.qualities.moneda-1);
+                system.setCharacterText("<p>¡Has perdido una moneda!</p>");
+                system.doLink( "escena8" );
               }
 
             }

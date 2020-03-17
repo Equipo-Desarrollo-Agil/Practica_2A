@@ -103,13 +103,78 @@ undum.game.situations = {
     ),
     escena5: new undum.SimpleSituation(
 			"<p>Una vez recogida la moneda, te encuentras dos caminos, cada uno con un cartel\
-      un poco peculiar, <a href='escena7'>Camino de los siniestros</a> o <a href='escena8'>Camino de la flor de la vida.</a></p>"
+      un poco peculiar, <a href='escena6'>Camino de los siniestros</a> o <a href='escena7'>Camino de la flor de la vida.</a></p>"
 		),
     escena6: new undum.SimpleSituation(
-      "<h1>Camino de los siniestros</h1>",
+      "<h1>Camino de los siniestros</h1>"
+
     ),
     escena7: new undum.SimpleSituation(
-      "<h1>Camino de la flor de la vida</h1>",
+      "<h1>Camino de la flor de la vida</h1>\
+      <p> Has girado a la derecha y ante ti encuentras algo que te estremece,\
+      hay un muro ante ti que te impide el paso, por lo tanto decides\
+      volver por donde has venido aunque cuando te das la vuelta te percatas\
+      de que había algo extraño en ese muro, podrías <a href='escenadetalle'>\
+      observarlo detalladamente </a>, aunque no arriesgarse y <a href='escena5'>\
+      volver </a>, cobarde, pero buena idea.</p>"
+
+
+    ),
+    escenadetalle: new undum.SimpleSituation(
+      "<p> Resulta que al ver bien el muro observas que efectivamente ves que\
+      las piedras no son como el resto del laberinto, además tienen una posicion\
+      extraña si las comparas con las demás.<br>\
+      Percibes que hay un hueco entre dos piedras con una forma muy peculiar,\
+      <i>Se parece mucho a la ranura de una máquina expendera</i>, se te pasa\
+      por la cabeza la idea de <a href='escena8/menosmoneda'>meter\
+      la moneda </a>que cogiste antes pero, ¿y si la pierdes para nada?,\
+      ya le tienes más cariño que a tu hermano a esa moneda, lo mismo preferirías\
+      <a href='escena5'> volver por donde viniste</a></p>",
+      {
+            actions:{
+              "menosmoneda": function(character, system, to) {
+                system.setQuality("moneda", character.qualities.moneda-1);
+              }
+
+            }
+      }
+    ),
+    escena8: new undum.SimpleSituation(
+      "<h1> Final de la flor de la vida </h1>\
+      <p> El muro se abre ante ti y detrás de él encuentras \
+      <a href='./moneda' class='once'>la moneda</a> que insertaste antes. Después de esto ves una especie de\
+      sala que ocultaba este muro, en el centro de la sala hay un pedestal\
+      en el cuál se encuentra una brillante y hermosa moneda y al lado otra\
+      moneda igual que la anterior pero oxidada y sucia, te acercas al pedestal\
+      para mirarlas y te das cuenta de que son iguales a la que tienes. Al lado\
+      de estas monedas, en el pedestal, hay un grabado que dice: <i>Vida y\
+      Muerte, dos caras de la misma moneda, al igual que esta sala en donde\
+      puede llegar tu final o seguir en la flor de la vida</i>. <br>\
+      Después de leer esto no sabes si coger la <a href='escenamuerte'>\
+      moneda brillante</a>, la <a href='./monedaoxidada' class='once'> moneda oxidada\
+      </a> o <a href='escena5'>volver por dónde viniste</a></p>",
+      {
+            actions:{
+              "moneda": function(character, system, to) {
+                system.setQuality("moneda", character.qualities.moneda+1);
+                system.setCharacterText("<p>Perfecto. Ahora tienes una moneda.</p>");
+              },
+              "monedaoxidada": function(character, system, to) {
+                system.setQuality("moneda", character.qualities.moneda+1);
+                system.setCharacterText("<p>Perfecto. Ahora tienes una moneda.</p>");
+              }
+
+            }
+      }
+
+    ),
+    escenamuerte: new undum.SimpleSituation(
+      "<h1> Tu final llegó antes de tiempo </h1>\
+      <p>A veces no te puedes fiar de las apariencias pues la moneda estaba\
+      brillante debido a un fuerte veneno que al tocarlo has fallecido\
+      instantáneamente, ya nunca sabrás quién te encerró allí ni lo que\
+      oculta este laberinto, a no ser que...</p> <br> <br> <br>\
+      <i>pss aquí, F5</i>"
     ),
 
 

@@ -65,13 +65,13 @@ undum.game.situations = {
       "<h1>La moneda</h1>\
       <img src='media/games/tutorial/moneda.jpg' class='float_right' width = 350 heigth = 350>\
       <p>Aturdida al girar la esquina y curiosa de saber que era lo que tanto brillaba\
-      vió en el lado derecho del pasillo algo redondo y dorado... es... UNA <a href='./Monedas' >MONEDA</a> .\
+      vió en el lado derecho del pasillo algo redondo y dorado... es... UNA <a href='./moneda' class='once'>MONEDA</a> .\
       Justo al lado, estaba colocado otro curioso papel en el que desvelaba: </p>\
       <p><i> Te has quedado impacta al ver esta gran luminusidad, ¿verdad?\
       Verás que para que te encuentres con la motivación de saber que cada vez estás\
       más cerca de la salida y ser por fin libre, a lo largo del laberinto te encontrarás\
       5 monedas, que te aseguro que no serán algunas nada fácil de encontrar, también tienes\
-      la posibilidad de no recogerlas, pero con ellas te sentirás más seguro. ¡SUERTE!</i></p>\
+      la posibilidad de no recogerlas, pero con ellas te sentirás más seguro. ¡SUERTE!</i>\
       <a href='escena4'>Seguir el camino</a></p>",
       {
             actions:{
@@ -513,14 +513,14 @@ undum.game.start = "start";
  * possess. We don't have to be exhaustive, but if we miss one out then
  * that quality will never show up in the character bar in the UI. */
 undum.game.qualities = {
-    monedas: new undum.IntegerQuality(
-        "Monedas", {priority:"0002", group:'progreso', onDisplay:"&#10003;"}
+    moneda: new undum.IntegerQuality(
+        "Monedas", {priority:"0003", group:'progreso', onDisplay:"&#10003;"}
     ),
-    llave: new undum.NumericQuality(
-        "Llave", {priority:"0001", group:'progreso'}
+    llave: new undum.OnOffQuality(
+        "llave", {priority:"0002", group:'progreso', onDisplay:"&#10003;"}
     ),
     nota: new undum.OnOffQuality(
-        "Nota Siniestra", {priority:"0003", group:'objetos', onDisplay:"&#10003;"}
+        "Nota Siniestra", {priority:"0005", group:'objetos', onDisplay:"&#10003;"}
     )
 };
 
@@ -539,8 +539,8 @@ undum.game.qualities = {
 /* This function gets run before the game begins. It is normally used
  * to configure the character at the start of play. */
 undum.game.init = function(character, system) {
-    character.qualities.monedas = 0;
-    character.qualities.llave = 0;
+    character.qualities.moneda = 0;
+    system.setQuality( "llave" , false )
     character.qualities.nota = 1;
     system.setCharacterText("<p>Estos son los Objetos que has ido encontrando.</p>");
 };

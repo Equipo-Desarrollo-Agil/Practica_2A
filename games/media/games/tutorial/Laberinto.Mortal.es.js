@@ -126,7 +126,7 @@ undum.game.situations = {
       extraña si las comparas con las demás.<br>\
       Percibes que hay un hueco entre dos piedras con una forma muy peculiar,\
       <i>Se parece mucho a la ranura de una máquina expendera</i>, se te pasa\
-      por la cabeza la idea de <a href='escena8/menosmoneda'>meter\
+      por la cabeza la idea de <a href='./menosmoneda'>meter\
       la moneda </a>que cogiste antes pero, ¿y si la pierdes para nada?,\
       ya le tienes más cariño que a tu hermano a esa moneda, lo mismo preferirías\
       <a href='escena5'> volver por donde viniste</a></p>",

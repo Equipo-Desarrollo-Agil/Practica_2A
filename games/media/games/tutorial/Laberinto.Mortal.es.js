@@ -72,25 +72,46 @@ undum.game.situations = {
       más cerca de la salida y ser por fin libre, a lo largo del laberinto te encontrarás\
       5 monedas, que te aseguro que no serán algunas nada fácil de encontrar, también tienes\
       la posibilidad de no recogerlas, pero con ellas te sentirás más seguro. ¡SUERTE!</i></p>\
-      <p>Una vez pensaste si recoger la moneda, te encuentras dos caminos, cada uno con un cartel\
-      un poco peculiar, <a href='escena4'>Camino de los siniestros</a> o <a href='escena5'>Camino de la flor de la vida.</a></p>"
+      <a href='escena4'>Seguir el camino</a></p>",
       {
             actions:{
-              "Monedas": function(character, system, to) {
-                system.setQuality("Monedas", 1);
+              "moneda": function(character, system, to) {
+                system.setQuality("moneda", 1);
+                system.setCharacterText("<p>Perfecto. Ahora tienes una moneda.</p>");
+              },
+              exit: function(character, system, to) {
+                  system.setQuality("moneda", character.qualities.moneda);
               }
-            },
-            exit: function(character, system, to) {
-                system.IntergerQuality("Monedas", numeric.qualities.monedas+1);
-              }
+            }
+      }
+      ),
+    escena4:new undum.SimpleSituation(
+      "<h1>Toma nota</h1>\
+       <img src='media/games/tutorial/moneda2.jpg' class='float_right'width = 200 heigth = 150>\
+      <p>Las monedas son muy importantes para el progreso en el camino del laberinto.</p>",
+       {
+ 				enter: function( character, system, from ) {
+ 					if( character.qualities.moneda ) {
+ 						system.doLink( "escena5" );
+ 					} else {
+ 						system.write( "<p>Al no coger la moneda, no ves bien el camino a seguir.</a></p>\
+            </p>\
+            <p><a href='escena3'>Quiero volver a coger la moneda</a></p>");
+ 					}
+ 				}
+ 			}
+    ),
+    escena5: new undum.SimpleSituation(
+			"<p>Una vez recogida la moneda, te encuentras dos caminos, cada uno con un cartel\
+      un poco peculiar, <a href='escena7'>Camino de los siniestros</a> o <a href='escena8'>Camino de la flor de la vida.</a></p>"
+		),
+    escena6: new undum.SimpleSituation(
+      "<h1>Camino de los siniestros</h1>",
+    ),
+    escena7: new undum.SimpleSituation(
+      "<h1>Camino de la flor de la vida</h1>",
     ),
 
-    escena4:new undum.SimpleSituation(
-      "<h1>TOCA HACER</h1>"
-    ),
-    escena5:new undum.SimpleSituation(
-      "<h1>TOCA HACER</h1>"
-    ),
 
     // NB: The 'hub' situation which is the main list of topics, is
     // defined wholly in the HTML file, and doesn't have an entry in
@@ -493,7 +514,7 @@ undum.game.start = "start";
  * that quality will never show up in the character bar in the UI. */
 undum.game.qualities = {
     monedas: new undum.IntegerQuality(
-        "Monedas", {priority:"0002", group:'progreso'}
+        "Monedas", {priority:"0002", group:'progreso', onDisplay:"&#10003;"}
     ),
     llave: new undum.NumericQuality(
         "Llave", {priority:"0001", group:'progreso'}

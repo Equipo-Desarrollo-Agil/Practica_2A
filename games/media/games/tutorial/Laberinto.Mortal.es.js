@@ -237,7 +237,9 @@ undum.game.situations = {
     escenafinal: new undum.SimpleSituation(
       "<H1>Pasillo final</H1>\
       <img src='media/games/tutorial/puerta.jpg' class='float_right' width = 250 heigth = 250>\
-      <p>Con tu llave ya puedes seguir tu camino y por FIN ser LIBRE.</p>"
+      <p>Con tu llave ya puedes seguir tu camino y por FIN ser LIBRE.</p>\
+      <p>Espero que te hayas divertido en el juego del laberinto y hayas consegido todas las monedas\
+      que se encontraban en él.</p>"
     ),
     escena7: new undum.SimpleSituation(
       "<h1>Camino de la flor de la vida</h1>\

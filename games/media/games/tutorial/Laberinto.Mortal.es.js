@@ -216,7 +216,18 @@ undum.game.situations = {
         }
     ),
     escenaizquierda: new undum.SimpleSituation(
-      "<p><a href='escenafinal'>Abanzamos</a> hacia el pasillo derecho para abrir la puerta.</p>"
+      "<p>Antes de seguir abanzando tienes que saber que la llave es fundamental para salir del laberinto.</p>",
+      {
+       enter: function( character, system, from ) {
+         if( character.qualities.llave ) {
+           system.doLink( "escenafinal" );
+         } else {
+           system.write( "<p>Al no coger la llave, no puedes salir del laberinto.</a></p>\
+           </p>\
+           <p><a href='cofre1'>Quiero abrir el cofre de nuevo.</a></p>");
+         }
+       }
+     }
     ),
     escena12: new undum.SimpleSituation(
       "<H1>VUELVE A TOMAR NOTA</H1>\

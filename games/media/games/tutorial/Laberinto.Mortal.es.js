@@ -286,6 +286,7 @@ undum.game.situations = {
     ),
     escena8: new undum.SimpleSituation(
       "<h1> Final de la flor de la vida </h1>\
+      <img src='media/games/tutorial/pasillomoneda.jpg' class='float_left'width = 200 heigth = 150>\
       <p> El muro se abre ante ti y detrás de él encuentras \
       <a href='./moneda' class='once'>la moneda</a> que insertaste antes. Después de esto ves una especie de\
       sala que ocultaba este muro, en el centro de la sala hay un pedestal\

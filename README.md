@@ -28,13 +28,23 @@ Hemos elegido estas historias de usuario estimando su realización en el primer 
 
 ### [URL DE TABLERO EN TRELLO](https://trello.com/b/9Db6VUtc)
 
-Memoria Sprint 1:
+## Memoria Sprint 1:
 
-Sprint Review/Sprint Retrospective:
+### Imagen de Sprint terminado el sprint:
+
+<img src="Captura de pantalla (50).png">
+
+La historia de Usuario número 4 no la hemos puesta en tareas hechas porque al ser una petición de que al añadir nuevas escenas que aporten a la historia, nos ha parecido que este requisito debe de estar en proceso hasta el fin del proyecto.
+
+<img src="Captura de pantalla (49).png">
+
+En la parte de la derecha podemos ver la actividad que ha tenido el tablero mientras se realizaban los eventos SCRUM en el sprint.
+
+### Product Backlog Refinement:
+En la reunión llegamos a la decisión de que ibamos bien de tiempo y habíamos cambiado algo del css, por lo tanto decidimos añadir solo el último requisito que se introdujo con posterioridad al guión.
+
+### Sprint Review/Sprint Retrospective:
 57.5 PH completados y sobro tiempo. Pensamos subir a 70 puntos el proximo sprint. Comunicacion por grupo whatsapp y reuniones de voz en google meetings para los daily standups. El trabajo en grupo a funcionado bien, pero vamos a cambiar el proceso de trabajo un poco. Pensamos que despues de la primera semana del sprint, analizamos cuanto trabajo nos falta y si podemos agregar mas historias al sprint, de esa manera avanzamos lo mas posible y nos podria dar la oportunidad a hacer mas con el proyecto.
 
-Product Backlog Refinement:
-En la reunión llegamos a la decisión de que ibamos bien de tiempo y habíamos cambiado algo del css, por lo tanto decidimos añadir solo el último requisito que se introdujo con posterioridqad al guión.
-
-Proximo sprint:
-Pensado en el proximo sprint incorporar una enigma para que resuelve el jugador y cambiar para que cada escena se vea individualmente. Tambien cambiar imagenes dependiendo de los objetos, y barra de progreso.
+### Proximo sprint:
+Se ha pensado que en el proximo sprint incorporaremos enigmas para el jugador y cambiar para que cada escena se vea individualmente. Tambien cambiar imagenes dependiendo de los objetos, y barra de progreso. En el PBR añadiremos más requisitos.

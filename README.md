@@ -28,6 +28,8 @@ Hemos elegido estas historias de usuario estimando su realización en el primer 
 
 ### [URL DE TABLERO EN TRELLO](https://trello.com/b/9Db6VUtc)
 
+Memoria Sprint 1:
+
 Sprint Review/Sprint Retrospective:
 57.5 PH completados y sobro tiempo. Pensamos subir a 70 puntos el proximo sprint. Comunicacion por grupo whatsapp y reuniones de voz en google meetings para los daily standups. El trabajo en grupo a funcionado bien, pero vamos a cambiar el proceso de trabajo un poco. Pensamos que despues de la primera semana del sprint, analizamos cuanto trabajo nos falta y si podemos agregar mas historias al sprint, de esa manera avanzamos lo mas posible y nos podria dar la oportunidad a hacer mas con el proyecto.
 

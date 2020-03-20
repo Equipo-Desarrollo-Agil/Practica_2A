@@ -30,7 +30,7 @@ Hemos elegido estas historias de usuario estimando su realización en el primer 
 
 ## Memoria Sprint 1:
 
-### Imagen de Sprint terminado el sprint:
+### Imagen de Product Backlog terminado el sprint:
 
 <img src="Captura de pantalla (50).png">
 

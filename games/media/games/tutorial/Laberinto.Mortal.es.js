@@ -32,42 +32,42 @@ undum.game.situations = {
         "<h1>Pasillo del laberinto</h1>\
         <img src='media/games/tutorial/Pasillo_piedra.png' class='float_right'>\
         <p>Te despiertas en medio de un pasillo algo aturdida, no recuerdas\
-        nada de la noche anterior, empiezas a investigar el lugar donde estas,\
+        nada de la noche anterior, empiezas a investigar el lugar donde está\
         hasta que llegas a la conclusión de que estás en un laberinto. Asustada\
         empiezas a buscar entre sus bolsillos tu móvil para pedir ayuda, pero\
-        allí lo único que encuentras es un papel que te revela lo siguiente:</p>\
+        allí lo único que encuentra es un papel que te revela lo siguiente:</p>\
         <p><i> Hola Robertina, te preguntarás qué haces aquí y por qué, bueno\
         lo único que te interesa saber por ahora es que estás encerrada aquí\
-        dentro y para escapar tendrás que encontrar la salida y la llave de su\
+        dentro y para salir tendrás que encontrar la salida y la llave de su\
         cerradura, para ello solo te valdrás de tu astucia asi que espero que\
         atendieses en el colegio porque no será fácil</i></p>\
         <p>Después de leer esto miras a tu alrededor y ves tus opciones:</p>\
         \
-        <p><a href='escena2'>-Solo hay un camino asi que seguiré por aquí.</a></p>"
+        <p><a href='escena2'>Solo hay un camino asi que seguiré por aquí.</a></p>"
     ),
     escena2:new undum.SimpleSituation(
       "<h1>Esquina a torcer</h1>\
       <p>Has decidido seguir el camino sin saber lo que te espera, ya que no\
-       te queda otra opción. Te crea ansiedad estar encerrada ahí, un sitio\
+       te queda otra opción. Te da ansiedad estar encerrada en ahí, un sitio\
        desconocido, sin saber cuánto tiempo vas a permanecer dentro, sin saber\
-       cómo llegaste ni cómo sobrevivir a este infierno.</p>\
+       cómo llegaste ni cómo sobrevivir a este tiempo.</p>\
        <img src='media/games/tutorial/esquina.jpg' class='float_left'width = 200 heigth = 150>\
-       <p>Seguir las luces del pasillo te ha llevado a su final, llegaste a\
-       la esperada esquina... Debes seguir para conocer la razón  de por qué estas ahí\
-       encerrada. Decidida te dispones a girar hacia la derecha para ver\
+       <p>Seguir las luces del pasilllo te ha llevado a su final, llegaste a\
+       la esperada esquina... Debes seguir para conocer la razón estas ahí\
+       encerrada. Decidida te dispones a girarte hacia la derecha para ver\
        qué es lo que te depara este misterioso laberinto.\
        \
-      ¿Qué es eso? Un gran destello te nubla la vista a un nivel, que sientes un\
+      ¿Qué es eso? Un gran destello te nubla la vista tanto, que sientes un\
       ligero mareo, demasiada luz en un lugar tan cerrado.\
       <p><a href='escena3'>Quieres descubrir qué es lo que brilla con tanta intensidad.</a></p>"
     ),
     escena3:new undum.SimpleSituation(
       "<h1>La moneda</h1>\
       <img src='media/games/tutorial/moneda.jpg' class='float_right' width = 350 heigth = 350>\
-      <p>Estas aturdida al girar la esquina y curiosa de saber que era lo que tanto brillaba\
-      vio en el lado derecho del pasillo algo redondo y dorado, es... UNA <a href='./moneda' class='once'>MONEDA</a> .\
+      <p>Aturdida al girar la esquina y curiosa de saber que era lo que tanto brillaba\
+      vió en el lado derecho del pasillo algo redondo y dorado... es... UNA <a href='./moneda' class='once'>MONEDA</a> .\
       Justo al lado, estaba colocado otro curioso papel en el que desvelaba: </p>\
-      <p><i> Te has quedado impactada al ver esta gran luminusidad, ¿verdad?\
+      <p><i> Te has quedado impacta al ver esta gran luminusidad, ¿verdad?\
       Verás que para que te encuentres con la motivación de saber que cada vez estás\
       más cerca de la salida y ser por fin libre, a lo largo del laberinto te encontrarás\
       5 monedas, que te aseguro que no serán algunas nada fácil de encontrar, también tienes\
@@ -108,38 +108,72 @@ undum.game.situations = {
     escena6: new undum.SimpleSituation(
       "<h1>Camino de los siniestros</h1>\
       <p>Al caminar por este gran pasillo oscuro y escalofriante.<p>\
-      <p>Te das cuenta que no ves nada, echas mano a los bolsillos y encuentra el papel que te guardaste\
-      de las notas indicativas del laberinto junto a un mechero y decides <a href='escenaluz'>quemarlo</a> para así tener algo\
-      para alumbrar pero tampoco sabes cuánto durará el papel o <a href='escenaoscura'>seguir avanzando a oscuras</a>.</p>"
+      <p>Se da cuenta que no ve nada, echa mano a los bolsillos y encuentra el papel que se guardó\
+      de las notas indicativas del laberinto y un mechero y decide <a href='escenaluz'>quemarlo</a> para así tener algo\
+      para alumbrar pero tampoco sabe cuanto durará el papel o <a href='escenaoscura'>seguir abanzando a oscuras</a>.</p>"
     ),
     escenaoscura: new undum.SimpleSituation(
-      "<p>La oscuridad no te deja ver, por lo tanto, no te atreves a seguir caminando\
-      ya que no sabes hacia donde dirigirte, ni tampoco sabes si llegarás a encontrar\
-      alguna otra nota interesante o cualquier otra cosa que te sirva para salir de ahí.\
-      Entonces decide volver a coger el papel y <a href='escenaluz'>quemarlo</a>, así conseguirás algo de luz.</p>"
+      "<p>La oscuridad no le deja ver, por lo tanto, no se atreves a seguir caminando\
+      ya que no sabe hacia donde dirigirse, ni tampoco sabe si se llegará a encontrar\
+      alguna otra nota interesante o cualquier otra cosa que le sirva para salir de ahí.\
+      Entonces decide volver a coger el papel y <a href='escenaluz'>quemarlo</a>, así conseguirá algo de luz.</p>"
     ),
     escenaluz: new undum.SimpleSituation(
       "<H1>La luz te guiará</H1>\
       <img src='media/games/tutorial/antorcha.jpg' class='float_right' width = 350 heigth = 350>\
       <p>Hiciste bien en quemar aquel papel aunque te tienes que dar un poco de prisa\
       ya que no sabes cuanto tiempo podrás mantener el fuego.</p>\
-      <p>Ves que a la derecha hay un cofre, un poco deteriorado.\
-      Decides <a href='cofre'>abrirlo</a>, con cierto miedo a lo que puede haber dentro.</p>\
-      <p>Al final te encuentras una puerta vieja con un pomo un tanto extraño, decide investigar el <a href='pomo'>pomo</a>\
+      <p>Ve que a la derecha hay un cofre, un poco estropeado por el tiempo.\
+      Decide <a href='cofre'>abrirlo</a>, con la curiosidad de seguir encontrando más enigmas.</p>\
+      <p>Al final se encuentras una puerta vieja con un pomo un tanto extraño, decide investigar el <a href='pomo'>pomo</a>\
       o <a href='escena9'>abrir la puerta</a> para seguir investigando el laberinto. </p>"
     ),
     cofre: new undum.SimpleSituation(
        "<H1>El cofre</H1>\
        <img src='media/games/tutorial/cofrevacio.jpg' width = 400 heigth = 350>\
-        <p>¡Uy! Al parecer el cofre está vacío, solo hay polvo y muchas telarañas, ¡QUÉ ASCO!\
-        <a href='escenaluz'>Cerrar el cofre</a>.</p>"
+        <p>Dentro del cofre ves un libro, una botella de agua, y una calavera de oro lado a lado.\
+		Arriba de estos objetos te das cuenta que hay una escritura en el cofre.\
+		La escritura lee:</p>\
+		<p> Digo mucho pero no me puedes oir, Me abro pero por mi no puedes pasar,Tengo espina pero no tengo hueso, no debo ser jusgado por mi cara, que soy?</p>\
+        <p><a href='escenalibro'>Recojer libro</a>\, <a href='escenamuertecofre'>recojer agua</a>\, o <a href='escenamuertecofre'>recojer calabera</a>.</p>"
+    ),
+	escenalibro: new undum.SimpleSituation(
+	   "<H1>El Libro</H1>\
+	   <img src='media/games/tutorial/libro_moneda.jpg' width = 400 heigth = 350>\
+	   <p>Al recojer el libro, oyes un ruido del cofre y el cofre se cierra solo.\
+	   Abres el libro y te encuentras <a href='./moneda' class='once'>una moneda</a>.\
+	   Al recojer la moneda, vez que la el libro solo tiene una pagina con palabras escritas.\
+	   El libro dice, has evidado muerte por tu inteligencia, habre el cofre de nuevo y moriras.\
+	   Debes dejar el libro y <a href='escenaluz2'>volver de adonde viniste</a>.</p>",
+	   {
+            actions:{
+              "moneda": function(character, system, to) {
+                system.setQuality("moneda", character.qualities.moneda+1);
+                system.setCharacterText("<p>Perfecto. Ahora tienes otra moneda.</p>");
+                }
+            }
+        }
+	),
+	escenamuertecofre: new undum.SimpleSituation(
+		"<H1>La Curiosidad Mato al Gato</H1>\
+		<img src='media/games/tutorial/muerte_cofre2.png' width = 400 heigth = 400>\
+		<p>Al recojer el objeto, notas que habia un panel de presion abajo de el.\
+		Oyes un ruido tras tuyo y una pared de piedra cae, cerrando el pasaje de entrada.\
+		Te has quedado atrapada con el cofre, y como la salida, tu destino a sido sellado.</p>"
+	),
+	escenaluz2: new undum.SimpleSituation(
+      "<H1>La luz te guiará</H1>\
+      <img src='media/games/tutorial/antorcha.jpg' class='float_right' width = 350 heigth = 350>\
+      <p>Hiciste bien en evitar el cofre.</p>\
+      <p>Sigues a la puerta vieja con un pomo un tanto extraño, decide investigar el <a href='pomo'>pomo</a>\
+      o <a href='escena9'>abrir la puerta</a> para seguir investigando el laberinto. </p>"
     ),
     pomo: new undum.SimpleSituation(
       "<H1>El misterioso pomo</H1>\
       <img src='media/games/tutorial/pomo.jpg' class='float_left' width = 200 heigth = 150>\
-      <p><i>Parece que el pomo tiene una forma extraña y brillante. Te acercas y te das cuenta que dentro del pomo hay<a href='./moneda' class='once'>otra moneda</a>.\
-      Te preguntas en el punto donde te encuentras cuantas monedas llevas cogidas. ¿Estarás ya cerca del final del laberinto?\
-      ¿Cuántos pasillos te quedarán por recorrer? <a href='escenaluz'>Volver</a>.</i></p>",
+      <p><i>Parece que el pomo tiene una forma extraña y brillante. Se acerca y se da cuenta que es <a href='./moneda' class='once'>otra moneda</a>.\
+      Se pregunta que al paso donde Se encuentra cuantas monedas llevas cogidas. ¿Estará ya cerca del final del laberinto?\
+      ¿Cuántos pasillos le quedarán por recorrer? <a href='escenaluz'>Volver</a>.</i></p>",
       {
             actions:{
               "moneda": function(character, system, to) {
@@ -151,15 +185,15 @@ undum.game.situations = {
     ),
     escena9: new undum.SimpleSituation(
         "<H1>Pasillo inquietante</H1>\
-        <p>Estás ya cansada y un poco mareada de tantos pasillos, encuentras una silla\
-        en la que no sabes si <a href='descansar'>sentarte</a> y tomar un descanso o <a href='escena10'>seguir</a>.</p>"
+        <p>Robertina ya cansada y un poco mareada de tantos pasillos encuentra una silla\
+        en la que no sabe si <a href='descansar'>sentarse</a> y tomar un descanso o <a href='escena10'>seguir</a>.</p>"
     ),
     descansar: new undum.SimpleSituation(
       "<img src='media/games/tutorial/silla.jpg' class='float_left' width = 200 heigth = 150>\
-      <p>Decides sentarte y tomar un poco de aire para seguir con más fuerza.</p>\
-      <p>Al agachar la cabeza, te das cuenta que en una de las patas delanteras de la silla\
-      ves unas de las maravillosas <a href='./moneda' class='once'>monedas</a>.\
-      Ya te encuentras con las pilas recargadas y decides <a href='escena10'>seguir</a>.</p>",
+      <p>Decide sentarse y tomar un poco de aire para seguir con más fuerza.</p>\
+      <p>Al agachar la cabeza, se da cuenta que en una de las patas delanteras de la silla\
+      ve unas de las maravillosas <a href='./moneda' class='once'>monedas</a>.\
+      Robertina ya se encuentra con las pilas recargadas y decide <a href='escena10'>seguir</a>.</p>",
       {
             actions:{
               "moneda": function(character, system, to) {
@@ -170,8 +204,8 @@ undum.game.situations = {
         }
     ),
     escena10: new undum.SimpleSituation(
-      "<p>Siguiendo por el pasillo inquietante, al fondo ves una armadura en mitad de una bifurcación, te preguntas qué pasaría\
-      si <a href='armadura'>movieses algunos de los dos brazos</a>.</p>\
+      "<p>Siguiendo en el pasillo inquietante, al fondo ve una armadura, se pregunta que pasaría\
+      si <a href='armadura'>moviese algunos de los dos brazos</a>.</p>\
       <p>En la bifurcación, se encuentra un camino hacia <a href='escena11'>la izquierda</a> con un cofre un tanto intrigante\
       y otra a <a href='escena12'>la derecha</a> con una puerta que pone 'EXIT'.</p> "
     ),
@@ -196,12 +230,12 @@ undum.game.situations = {
     escena11: new undum.SimpleSituation(
       "<H1>Cofre misterioso</H1>\
       <img src='media/games/tutorial/cofre.jpeg' class='float_right' width = 250 heigth = 250>\
-      <p>Como bien hemos dicho, hay un cofre misterioso. quizás al <a href='cofre1'>abrirlo</a> puede que te encuentres algo.</p>\
-      <p><a href='escenaizquierda'>Avanzamos</a> hacia el pasillo derecho para abrir la puerta.</p>"
+      <p>Como bien hemos dicho, hay un cofre misterioso. quizá al <a href='cofre1'>abrirlo</a> puede que se encuentre algo.</p>\
+      <p><a href='escenafinal'>Abanzamos</a> hacia el pasillo derecho para abrir la puerta.</p>"
     ),
     cofre1: new undum.SimpleSituation(
         "<img src='media/games/tutorial/llave.jpeg' class='float_right' width = 200 heigth = 200>\
-        <p>¡MARAVILLOSO! Has encontrado <a href='./llave' class='once'>la llave</a>. Ya puedes ir en busca de la salida.\
+        <p>¡MARAVILLOSO! Hemos encontrado <a href='./llave' class='once'>la llave</a>. Ya podemos ir en busca de la salida.\
         <a href='escenaizquierda'>Cerrar el cofre</a>.</p>",
         {
               actions:{
@@ -216,7 +250,7 @@ undum.game.situations = {
         }
     ),
     escenaizquierda: new undum.SimpleSituation(
-      "<p>Antes de seguir avanzando tienes que saber que la llave es fundamental para salir del laberinto.</p>",
+      "<p>Antes de seguir abanzando tienes que saber que la llave es fundamental para salir del laberinto.</p>",
       {
        enter: function( character, system, from ) {
          if( character.qualities.llave ) {
@@ -248,27 +282,27 @@ undum.game.situations = {
     escenafinal: new undum.SimpleSituation(
       "<H1>Pasillo final</H1>\
       <img src='media/games/tutorial/puerta.jpg' class='float_right' width = 250 heigth = 250>\
-      <p>Con tu llave ya puedes seguir tu camino y por fin ser libre.</p>\
+      <p>Con tu llave ya puedes seguir tu camino y por FIN ser LIBRE.</p>\
       <p>Espero que te hayas divertido en el juego del laberinto y hayas consegido todas las monedas\
       que se encontraban en él.</p>"
     ),
     escena7: new undum.SimpleSituation(
       "<h1>Camino de la flor de la vida</h1>\
       <p> Has girado a la derecha y ante ti encuentras algo que te estremece,\
-      hay un muro que te impide el paso, por lo tanto decides\
-      volver por donde has venido aunque cuando te das la vuelta y te percatas\
+      hay un muro ante ti que te impide el paso, por lo tanto decides\
+      volver por donde has venido aunque cuando te das la vuelta te percatas\
       de que había algo extraño en ese muro, podrías <a href='escenadetalle'>\
       observarlo detalladamente </a>, aunque no arriesgarse y <a href='escena5'>\
-      volver </a> es una buena idea, cobarde, pero buena idea.</p>"
+      volver </a>, cobarde, pero buena idea.</p>"
 
 
     ),
     escenadetalle: new undum.SimpleSituation(
-      "<p> Resulta que al ver mejor el muro observas que efectivamente \
+      "<p> Resulta que al ver bien el muro observas que efectivamente ves que\
       las piedras no son como el resto del laberinto, además tienen una posicion\
       extraña si las comparas con las demás.<br>\
       Percibes que hay un hueco entre dos piedras con una forma muy peculiar,\
-      <i>Se parece mucho a la ranura de una máquina expendedora</i>, se te pasa\
+      <i>Se parece mucho a la ranura de una máquina expendera</i>, se te pasa\
       por la cabeza la idea de <a href='./menosmoneda'>meter\
       la moneda </a>que cogiste antes pero, ¿y si la pierdes para nada?,\
       ya le tienes más cariño que a tu hermano a esa moneda, lo mismo preferirías\
@@ -294,7 +328,7 @@ undum.game.situations = {
       moneda igual que la anterior pero oxidada y sucia, te acercas al pedestal\
       para mirarlas y te das cuenta de que son iguales a la que tienes. Al lado\
       de estas monedas, en el pedestal, hay un grabado que dice: <i>Vida y\
-      Muerte, dos caras de la misma moneda, al igual que esta sala dónde\
+      Muerte, dos caras de la misma moneda, al igual que esta sala en donde\
       puede llegar tu final o seguir en la flor de la vida</i>. <br>\
       Después de leer esto no sabes si coger la <a href='escenamuerte'>\
       moneda brillante</a>, la <a href='./monedaoxidada' class='once'> moneda oxidada\
@@ -755,4 +789,3 @@ undum.game.init = function(character, system) {
     character.qualities.nota = 1;
     system.setCharacterText("<p>Estos son los Objetos que has ido encontrando.</p>");
 };
-

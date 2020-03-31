@@ -113,7 +113,8 @@ undum.game.situations = {
       para alumbrar pero tampoco sabe cuanto durará el papel o <a href='escenaoscura'>seguir abanzando a oscuras</a>.</p>"
     ),
     escenaoscura: new undum.SimpleSituation(
-      "<p>La oscuridad no le deja ver, por lo tanto, no se atreves a seguir caminando\
+      "<img src='media/games/tutorial/oscuridad.jpg' class='float_right' width = 350 heigth = 350>\
+	<p>La oscuridad no le deja ver, por lo tanto, no se atreves a seguir caminando\
       ya que no sabe hacia donde dirigirse, ni tampoco sabe si se llegará a encontrar\
       alguna otra nota interesante o cualquier otra cosa que le sirva para salir de ahí.\
       Entonces decide volver a coger el papel y <a href='escenaluz'>quemarlo</a>, así conseguirá algo de luz.</p>"
@@ -231,7 +232,7 @@ undum.game.situations = {
       "<H1>Cofre misterioso</H1>\
       <img src='media/games/tutorial/cofre.jpeg' class='float_right' width = 250 heigth = 250>\
       <p>Como bien hemos dicho, hay un cofre misterioso. quizá al <a href='cofre1'>abrirlo</a> puede que se encuentre algo.</p>\
-      <p><a href='escenafinal'>Abanzamos</a> hacia el pasillo derecho para abrir la puerta.</p>"
+      <p><a href='escenaizquierda'>Abanzamos</a> hacia el pasillo derecho para abrir la puerta.</p>"
     ),
     cofre1: new undum.SimpleSituation(
         "<img src='media/games/tutorial/llave.jpeg' class='float_right' width = 200 heigth = 200>\

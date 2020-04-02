@@ -326,7 +326,7 @@ undum.game.situations = {
       por la cabeza la idea de <a href='./menosmoneda'>meter\
       la moneda </a>que cogiste antes pero, ¿y si la pierdes para nada?,\
       ya le tienes más cariño que a tu hermano a esa moneda, lo mismo preferirías\
-      <a href='escena5'> volver por donde viniste</a></p>",
+      <a href='escena5'> volver por donde viniste.</a></p>",
       {
             actions:{
               "menosmoneda": function(character, system, to) {
@@ -343,22 +343,45 @@ undum.game.situations = {
       <img src='media/games/tutorial/pasillomoneda.jpg' width = 200 heigth = 150>\
       <p> El muro se abre ante ti y detrás de él encuentras \
       <a href='./moneda' class='once'>la moneda</a> que insertaste antes. Después de esto ves una especie de\
-      sala que ocultaba este muro, en el centro de la sala hay un pedestal\
+      sala que ocultaba este muro, decides <a href='escena8moneda'>entrar a la sala</a>.</p>",
+      {
+            actions:{
+              "moneda": function(character, system, to) {
+                system.animateQuality("moneda", character.qualities.moneda+1);
+                system.setCharacterText("<p>Perfecto. Ahora tienes una moneda.</p>");
+              }
+            }
+      }
+
+    ),
+    escena8moneda:new undum.SimpleSituation(
+      "<p>Al no coger la moneda no puedes acceder a la sala.</p>\
+      </p>\
+      <p><a href='escena8'>Quiero volver a coger la moneda.</a></p>",
+       {
+ 				enter: function( character, system, from ) {
+ 					if( character.qualities.moneda ) {
+ 						system.doLink( "escenamonedas" );
+ 					} else {
+ 						system.write( "<p>¿No crees que te has dejado atrás algo?</a></p>");
+ 					}
+ 				}
+ 			}
+    ),
+    escenamonedas: new undum.SimpleSituation(
+      "<h1> Sala oculta </h1>\
+      <p>En el centro de la sala hay un pedestal\
       en el cuál se encuentra una brillante y hermosa moneda y al lado otra\
       moneda igual que la anterior pero oxidada y sucia, te acercas al pedestal\
       para mirarlas y te das cuenta de que son iguales a la que tienes. Al lado\
       de estas monedas, en el pedestal, hay un grabado que dice: <i>Vida y\
       Muerte, dos caras de la misma moneda, al igual que esta sala en donde\
       puede llegar tu final o seguir en la flor de la vida</i>. <br>\
-      Después de leer esto no sabes si coger la <a href='escenamuerte'>\
+      Después de leer esto decides coger la <a href='escenamuerte'>\
       moneda brillante</a>, la <a href='./monedaoxidada' class='once'> moneda oxidada\
       </a> o <a href='escena5'>volver por dónde viniste</a></p>",
       {
             actions:{
-              "moneda": function(character, system, to) {
-                system.animateQuality("moneda", character.qualities.moneda+1);
-                system.setCharacterText("<p>Perfecto. Ahora tienes una moneda.</p>");
-              },
               "monedaoxidada": function(character, system, to) {
                 system.animateQuality("moneda", character.qualities.moneda+1);
                 system.setCharacterText("<p>Perfecto. Ahora tienes una moneda.</p>");
@@ -366,7 +389,6 @@ undum.game.situations = {
 
             }
       }
-
     ),
     escenamuerte: new undum.SimpleSituation(
       "<h1> Tu final llegó antes de tiempo </h1>\

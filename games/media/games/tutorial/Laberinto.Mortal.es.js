@@ -355,15 +355,14 @@ undum.game.situations = {
 
     ),
     escena8moneda:new undum.SimpleSituation(
-      "<p>Al no coger la moneda no puedes acceder a la sala.</p>\
-      </p>\
-      <p><a href='escena8'>Quiero volver a coger la moneda.</a></p>",
+      "<p></p>",
        {
  				enter: function( character, system, from ) {
  					if( character.qualities.moneda ) {
  						system.doLink( "escenamonedas" );
  					} else {
- 						system.write( "<p>¿No crees que te has dejado atrás algo?</a></p>");
+ 						system.write( "<p>¿No crees que te has dejado atrás algo?\
+            <a href='escena8'>Quiero volver a coger la moneda.</a></p>");
  					}
  				}
  			}

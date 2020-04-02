@@ -63,7 +63,7 @@ undum.game.situations = {
     ),
     escena3:new undum.SimpleSituation(
       "<h1>La moneda</h1>\
-      <img src='media/games/tutorial/moneda.jpg' class='float_right' width = 350 heigth = 350>\
+      <img src='media/games/tutorial/moneda.jpg' width = 350 heigth = 350>\
       <p>Aturdida al girar la esquina y curiosa de saber que era lo que tanto brillaba\
       vió en el lado derecho del pasillo algo redondo y dorado... es... UNA <a href='./moneda' class='once'>MONEDA</a> .\
       Justo al lado, estaba colocado otro curioso papel en el que desvelaba: </p>\
@@ -171,7 +171,7 @@ undum.game.situations = {
     ),
     pomo: new undum.SimpleSituation(
       "<H1>El misterioso pomo</H1>\
-      <img src='media/games/tutorial/pomo.jpg' class='float_left' width = 200 heigth = 150>\
+      <img src='media/games/tutorial/pomo.jpg' width = 200 heigth = 150>\
       <p><i>Parece que el pomo tiene una forma extraña y brillante. Se acerca y se da cuenta que es <a href='./moneda' class='once'>otra moneda</a>.\
       Se pregunta que al paso donde Se encuentra cuantas monedas llevas cogidas. ¿Estará ya cerca del final del laberinto?\
       ¿Cuántos pasillos le quedarán por recorrer? <a href='escenaluz'>Volver</a>.</i></p>",
@@ -190,7 +190,7 @@ undum.game.situations = {
         en la que no sabe si <a href='descansar'>sentarse</a> y tomar un descanso o <a href='escena10'>seguir</a>.</p>"
     ),
     descansar: new undum.SimpleSituation(
-      "<img src='media/games/tutorial/silla.jpg' class='float_left' width = 200 heigth = 150>\
+      "<img src='media/games/tutorial/silla.jpg' width = 200 heigth = 150>\
       <p>Decide sentarse y tomar un poco de aire para seguir con más fuerza.</p>\
       <p>Al agachar la cabeza, se da cuenta que en una de las patas delanteras de la silla\
       ve unas de las maravillosas <a href='./moneda' class='once'>monedas</a>.\
@@ -212,7 +212,7 @@ undum.game.situations = {
     ),
     armadura: new undum.SimpleSituation(
       "<H1>El hombre armado</H1>\
-      <img src='media/games/tutorial/armadura.jpg' class='float_right' width = 100 heigth = 100>\
+      <img src='media/games/tutorial/armadura.jpg' width = 100 heigth = 100>\
       <p>Al parecer, acaba de abrirse la armadura y ... ¡TACHÁN! <a href='./moneda' class='once'>Otra moneda</a>.\
       <p><a href='escenasiguiente'>Seguir</a>.</p>",
       {
@@ -340,7 +340,7 @@ undum.game.situations = {
     ),
     escena8: new undum.SimpleSituation(
       "<h1> Final de la flor de la vida </h1>\
-      <img src='media/games/tutorial/pasillomoneda.jpg' class='float_left'width = 200 heigth = 150>\
+      <img src='media/games/tutorial/pasillomoneda.jpg' width = 200 heigth = 150>\
       <p> El muro se abre ante ti y detrás de él encuentras \
       <a href='./moneda' class='once'>la moneda</a> que insertaste antes. Después de esto ves una especie de\
       sala que ocultaba este muro, en el centro de la sala hay un pedestal\

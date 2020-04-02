@@ -76,7 +76,7 @@ undum.game.situations = {
       {
             actions:{
               "moneda": function(character, system, to) {
-                system.setQuality("moneda", 1);
+                system.animateQuality("moneda", 1);
                 system.setCharacterText("<p>Perfecto. Ahora tienes una moneda.</p>");
               },
               exit: function(character, system, to) {
@@ -149,7 +149,7 @@ undum.game.situations = {
 	   {
             actions:{
               "moneda": function(character, system, to) {
-                system.setQuality("moneda", character.qualities.moneda+1);
+                system.animateQuality("moneda", character.qualities.moneda+1);
                 system.setCharacterText("<p>Perfecto. Ahora tienes otra moneda.</p>");
                 }
             }
@@ -178,7 +178,7 @@ undum.game.situations = {
       {
             actions:{
               "moneda": function(character, system, to) {
-                system.setQuality("moneda", character.qualities.moneda+1);
+                system.animateQuality("moneda", character.qualities.moneda+1);
                 system.setCharacterText("<p>Perfecto. Ahora tienes una moneda.</p>");
                 }
             }
@@ -198,7 +198,7 @@ undum.game.situations = {
       {
             actions:{
               "moneda": function(character, system, to) {
-                system.setQuality("moneda", character.qualities.moneda+1);
+                system.animateQuality("moneda", character.qualities.moneda+1);
                 system.setCharacterText("<p>Perfecto. Ahora tienes una moneda.</p>");
                 }
             }
@@ -218,7 +218,7 @@ undum.game.situations = {
       {
             actions:{
               "moneda": function(character, system, to) {
-                system.setQuality("moneda", character.qualities.moneda+1);
+                system.animateQuality("moneda", character.qualities.moneda+1);
                 system.setCharacterText("<p>Perfecto. Ahora tienes una moneda.</p>");
                 }
             }
@@ -330,7 +330,7 @@ undum.game.situations = {
       {
             actions:{
               "menosmoneda": function(character, system, to) {
-                system.setQuality("moneda", character.qualities.moneda-1);
+                system.animateQuality("moneda", character.qualities.moneda-1);
                 system.setCharacterText("<p>¡Has perdido una moneda!</p>");
                 system.doLink( "escena8" );
               }
@@ -356,11 +356,11 @@ undum.game.situations = {
       {
             actions:{
               "moneda": function(character, system, to) {
-                system.setQuality("moneda", character.qualities.moneda+1);
+                system.animateQuality("moneda", character.qualities.moneda+1);
                 system.setCharacterText("<p>Perfecto. Ahora tienes una moneda.</p>");
               },
               "monedaoxidada": function(character, system, to) {
-                system.setQuality("moneda", character.qualities.moneda+1);
+                system.animateQuality("moneda", character.qualities.moneda+1);
                 system.setCharacterText("<p>Perfecto. Ahora tienes una moneda.</p>");
               }
 

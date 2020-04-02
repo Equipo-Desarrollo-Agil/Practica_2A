@@ -135,16 +135,16 @@ undum.game.situations = {
         <p>Dentro del cofre ves un libro, una botella de agua, y una calavera de oro lado a lado.\
 		Arriba de estos objetos te das cuenta que hay una escritura en el cofre.\
 		La escritura lee:</p>\
-		<p> Digo mucho pero no me puedes oir, Me abro pero por mi no puedes pasar,Tengo espina pero no tengo hueso, no debo ser jusgado por mi cara, que soy?</p>\
+		<p> Digo mucho pero no me puedes oir, me abro pero por mi no puedes pasar, tengo espina pero no tengo hueso, no debo ser juzgado por mi cara, que soy?</p>\
         <p><a href='escenalibro'>Recojer libro</a>\, <a href='escenamuertecofre'>recojer agua</a>\, o <a href='escenamuertecofre'>recojer calabera</a>.</p>"
     ),
 	escenalibro: new undum.SimpleSituation(
 	   "<H1>El Libro</H1>\
 	   <img src='media/games/tutorial/libro_moneda.jpg' width = 400 heigth = 350>\
-	   <p>Al recojer el libro, oyes un ruido del cofre y el cofre se cierra solo.\
+	   <p>Al recoger el libro, oyes un ruido del cofre y el cofre se cierra solo.\
 	   Abres el libro y te encuentras <a href='./moneda' class='once'>una moneda</a>.\
-	   Al recojer la moneda, vez que la el libro solo tiene una pagina con palabras escritas.\
-	   El libro dice, has evidado muerte por tu inteligencia, habre el cofre de nuevo y moriras.\
+	   Al recoger la moneda, ves que el libro sólo tiene una página con palabras escritas.\
+	   El libro dice, has evitado muerte por tu inteligencia, abre el cofre de nuevo y moriras.\
 	   Debes dejar el libro y <a href='escenaluz2'>volver de adonde viniste</a>.</p>",
 	   {
             actions:{
@@ -158,9 +158,9 @@ undum.game.situations = {
 	escenamuertecofre: new undum.SimpleSituation(
 		"<H1>La Curiosidad Mato al Gato</H1>\
 		<img src='media/games/tutorial/muerte_cofre2.png' width = 400 heigth = 400>\
-		<p>Al recojer el objeto, notas que habia un panel de presion abajo de el.\
-		Oyes un ruido tras tuyo y una pared de piedra cae, cerrando el pasaje de entrada.\
-		Te has quedado atrapada con el cofre, y como la salida, tu destino a sido sellado.</p>"
+		<p>Al recoger el objeto, notas que habia un panel de presión abajo de él.\
+		Oyes un ruido detrás tuyo y una pared de piedra cae, cerrando el pasaje de entrada.\
+		Te has quedado atrapada con el cofre, y como la salida, tu destino ha sido sellado.</p>"
 	),
 	escenaluz2: new undum.SimpleSituation(
       "<H1>La luz te guiará</H1>\

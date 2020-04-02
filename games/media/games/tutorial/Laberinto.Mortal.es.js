@@ -236,7 +236,8 @@ undum.game.situations = {
     ),
     cofre1: new undum.SimpleSituation(
         "<img src='media/games/tutorial/llave.jpeg' class='float_right' width = 200 heigth = 200>\
-        <p>¡MARAVILLOSO! Hemos encontrado <a href='./llave' class='once'>la llave</a>. Ya podemos ir en busca de la salida.\
+		<p>¡MARAVILLOSO! Hemos encontrado <a href='./llave' class='once'>la llave</a>.\
+		Al lado de la llave te encurentras una nota que dice: La salida se debe seguir, pero no se debe mirar. Ya podemos ir en busca de la salida.\
         <a href='escenaizquierda'>Cerrar el cofre</a>.</p>",
         {
               actions:{
@@ -255,7 +256,7 @@ undum.game.situations = {
       {
        enter: function( character, system, from ) {
          if( character.qualities.llave ) {
-           system.doLink( "escenafinal" );
+           system.doLink( "escenatrespuertas" );
          } else {
            system.write( "<p>Al no coger la llave, no puedes salir del laberinto.</a></p>\
            </p>\
@@ -280,10 +281,28 @@ undum.game.situations = {
  				}
  			}
     ),
+	escenatrespuertas: new undum.SimpleSituation(
+	  "<H1>Las Tres Puertas</H1>\
+	  <img src='media/games/tutorial/trespuertas.jpg' class='float_right' width = 350 heigth = 250>\
+	  <p>Al salir con la llave, te encuentras tres puertas, cada una con un llavero.\
+	  Arriba de cada puerta hay una figura de piedra, la puerta izquierda tiene la cabeza de Medusa,\
+	  la central tiene una figura de diamanate, y la de la derecha una flecha dirigiente.\
+	  Te recuerdas lo que dijo la nota en el cofre que la salida no se debe mirar, puede ser importante este detalle.</p>\
+	  <p>Tendras que usar la llave para abrir la <a href='escenafinal'>\
+      puerta izquierda</a>, la <a href='puertaincorrecta'>\
+      puerta central</a>, o la <a href='puertaincorrecta'>\
+      puerta derecha </a>.</p>"
+	),
+	puertaincorrecta: new undum.SimpleSituation(
+	"<H1>Decision Lamentable</H1>\
+	<img src='media/games/tutorial/muerte_cofre2.png' class='float_right' width = 350 heigth = 250>\
+	<p>Intentaste abrir la puerta que no era y la llave se te partio, dejandote \
+	sin forma de salir del laberinto.</p>"
+	),
     escenafinal: new undum.SimpleSituation(
       "<H1>Pasillo final</H1>\
       <img src='media/games/tutorial/puerta.jpg' class='float_right' width = 250 heigth = 250>\
-      <p>Con tu llave ya puedes seguir tu camino y por FIN ser LIBRE.</p>\
+      <p>Has abierto la puerta correcta y con tu llave ya puedes seguir tu camino y por FIN ser LIBRE.</p>\
       <p>Espero que te hayas divertido en el juego del laberinto y hayas consegido todas las monedas\
       que se encontraban en él.</p>"
     ),

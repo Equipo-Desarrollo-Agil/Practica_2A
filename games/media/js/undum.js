@@ -1033,7 +1033,7 @@
         }
 
         // Create the animated bar.
-        var totalWidth = 496;
+        var totalWidth = 82.6 * newValue;
         var bar = $("#ui_library #progress_bar").clone();
         bar.removeAttr("id");
         var widthElement = bar.find("[data-attr='width']");
@@ -1071,22 +1071,7 @@
         setTimeout(function() {
             widthElement.animate(
                 {'width': myOpts.to*totalWidth}, that.options.progress_bar_speed,
-                function() {
-                    // After a moment to allow the bar to be read, we can
-                    // remove it.
-                    setTimeout(function() {
-                        if (mobile) {
-                            bar.fadeOut(that.options.mobile_hide_speed, function() {
-                              $(this).remove();
-                            });
-                        } else {
-                            bar.animate({opacity: 0}, that.options.fade_speed).
-                                slideUp(that.options.slide_up_speed, function() {
-                                    $(this).remove();
-                                });
-                        }
-                    }, 2000);
-                }
+                
             );
         }, 500);
     };

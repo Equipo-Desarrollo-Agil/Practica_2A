@@ -49,7 +49,7 @@
 
     <!-- home
     ================================================== -->
-    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="games/media/img/hero-bg.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="games/media/img/hero-bg.jpg" data-natural-width=2000 data-natural-height=1000 data-position-y=center>
 
         <div class="overlay"></div>
         <div class="shadow-overlay"></div>

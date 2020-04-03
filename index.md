@@ -104,7 +104,7 @@
             </div> <!-- end col-full -->
         </div> <!-- end client-testimonials -->
 
-    </section> <!-- end s-clients -->
+
 
 
     <div class="row footer-bottom">
@@ -120,7 +120,7 @@
 
         </div> <!-- end footer-bottom -->
 
-    </footer> <!-- end footer -->
+
 
     <!-- preloader
     ================================================== -->
@@ -146,3 +146,4 @@
 </body>
 
 </html>
+

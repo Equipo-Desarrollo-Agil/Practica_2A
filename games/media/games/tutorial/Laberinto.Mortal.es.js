@@ -288,7 +288,7 @@ undum.game.situations = {
 	  Arriba de cada puerta hay una figura de piedra, la puerta izquierda tiene la cabeza de Medusa,\
 	  la central tiene una figura de diamanate, y la de la derecha una flecha dirigiente.\
 	  Te recuerdas lo que dijo la nota en el cofre que la salida no se debe mirar, puede ser importante este detalle.</p>\
-	  <p>Tendras que usar la llave para abrir la <a href='escenafinal'>\
+	  <p>Tendras que usar la llave para abrir la <a href='escenasemifinal'>\
       puerta izquierda</a>, la <a href='puertaincorrecta'>\
       puerta central</a>, o la <a href='puertaincorrecta'>\
       puerta derecha </a>.</p>"
@@ -306,6 +306,49 @@ undum.game.situations = {
       <p>Espero que te hayas divertido en el juego del laberinto y hayas consegido todas las monedas\
       que se encontraban en él.</p>"
     ),
+	      escenasemilibertad: new undum.SimpleSituation(
+    "<H1>Patio del recreo</H1>\
+    <img src='media/games/tutorial/patio.jpg' class='float_right' width = 350 heigth = 250>\
+    <p>Creiste que el fin había llegado, pero lamentandolo te queda seguir en él y seguir\
+    'disfrutando' esta esperiencia.</p>\
+    <p>Está Robertina en este hermoso patio y al frente ve un Caballero y le da una <a href='nota'>\
+    nota </a>.\ "
+  ),
+  nota: new undum.SimpleSituation(
+    "<p><i>¿Bonito patio verdad? En él se encuentra muchos misterios sin resolver,\
+     ¿creerás que serás capaz de encontrar la salidad?.</i></p>\
+    <p><i>Te damos algunas indicaciones de las que deberás seguir, ten cuidado porque puedes ganarlo\
+    o perderlo todo, incluso puedes llegar a morir:</i></p>\
+    <p><i>-<a href='pcarnivoras'>Las plantas carnívoras</a>.</i></p>\
+    <p><i>-FLor de la vida.</i></p>"
+  ),
+  pcarnivoras: new undum.SimpleSituation(
+    "<H1>Plantas Carnívoras</H1>\
+    <img src='media/games/tutorial/carnivoras.jpg' class='float_right' width = 350 heigth = 250>\
+    <p>Aquí presentamos nuestras maravillosas y queridas plantas, hay 5 plantas, te las presento...\
+    1.Venus atrapamoscas. 2.Bromelia. 3.<a href='./moneda' class='once'>Drosera</a>. 4.<a href='./moneda' class='once'>Rueda de agua</a>. 5.<a href='platano'>Planta plátano</a>.\
+    dos de ellas son muy dóciles y encantadoras, otras dos son un poco ladronas y la siguiente es mortal.</p>\
+    <p>Venus atrapamoscas se alimenta de aquello que a todo el mundo le gusta.</p>\
+     <p>Bromelia es una planta un poco bromista.</p>\
+     <p>Drosera le encanta el olor humano, qué curioso.</p>\
+     <p>Rueda de agua se hace fuerte cuando le dan mucha agua.</p>\
+     <p>Planta plátano es dulce y soñador.</p>",
+     {
+           actions:{
+             "moneda": function(character, system, to) {
+               system.animateQuality("moneda", character.qualities.moneda+1);
+               system.setCharacterText("<p>Perfecto. Ahora tienes una moneda.</p>");
+               }
+           }
+     }
+
+
+  ),
+  platano: new undum.SimpleSituation(
+    "<H1>Planta mortal</H1>\
+  	<img src='media/games/tutorial/muerte_cofre2.png' class='float_right' width = 350 heigth = 250>\
+  	<p>Elegiste la planta que tiene veneno de sabor dulce que te hará soñar con mucha profundida. Ten cuidado a la próxima.</p>"
+  ),
     escena7: new undum.SimpleSituation(
       "<h1>Camino de la flor de la vida</h1>\
       <p> Has girado a la derecha y ante ti encuentras algo que te estremece,\

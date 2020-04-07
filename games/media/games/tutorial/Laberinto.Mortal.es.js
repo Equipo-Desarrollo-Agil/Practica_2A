@@ -288,7 +288,7 @@ undum.game.situations = {
 	  Arriba de cada puerta hay una figura de piedra, la puerta izquierda tiene la cabeza de Medusa,\
 	  la central tiene una figura de diamanate, y la de la derecha una flecha dirigiente.\
 	  Te recuerdas lo que dijo la nota en el cofre que la salida no se debe mirar, puede ser importante este detalle.</p>\
-	  <p>Tendras que usar la llave para abrir la <a href='escenasemifinal'>\
+	  <p>Tendras que usar la llave para abrir la <a href='escenasemilibertad'>\
       puerta izquierda</a>, la <a href='puertaincorrecta'>\
       puerta central</a>, o la <a href='puertaincorrecta'>\
       puerta derecha </a>.</p>"
@@ -326,8 +326,12 @@ undum.game.situations = {
     "<H1>Plantas Carnívoras</H1>\
     <img src='media/games/tutorial/carnivoras.jpg' class='float_right' width = 350 heigth = 250>\
     <p>Aquí presentamos nuestras maravillosas y queridas plantas, hay 5 plantas, te las presento...\
-    1.Venus atrapamoscas. 2.Bromelia. 3.<a href='./moneda' class='once'>Drosera</a>. 4.<a href='./moneda' class='once'>Rueda de agua</a>. 5.<a href='platano'>Planta plátano</a>.\
-    dos de ellas son muy dóciles y encantadoras, otras dos son un poco ladronas y la siguiente es mortal.</p>\
+    1.<a href='./menosmoneda1' class='once'>Venus atrapamoscas.</a>\
+    2.<a href='./menosmoneda2' class='once'>Bromelia.</a>\
+    3.<a href='./moneda1' class='once'>Drosera</a>.\
+    4.<a href='./moneda2' class='once'>Rueda de agua</a>.\
+    5.<a href='platano'>Planta plátano</a>.\
+    Dos de ellas son muy dóciles y encantadoras, otras dos son un poco ladronas y la siguiente es mortal.</p>\
     <p>Venus atrapamoscas se alimenta de aquello que a todo el mundo le gusta.</p>\
      <p>Bromelia es una planta un poco bromista.</p>\
      <p>Drosera le encanta el olor humano, qué curioso.</p>\
@@ -335,10 +339,22 @@ undum.game.situations = {
      <p>Planta plátano es dulce y soñador.</p>",
      {
            actions:{
-             "moneda": function(character, system, to) {
-               system.animateQuality("moneda", character.qualities.moneda+1);
-               system.setCharacterText("<p>Perfecto. Ahora tienes una moneda.</p>");
-               }
+              "moneda1": function(character, system, to) {
+                system.animateQuality("moneda", character.qualities.moneda+1);
+                system.setCharacterText("<p>Perfecto. Ahora tienes una moneda.</p>");
+              },
+              "moneda2": function(character, system, to) {
+                system.animateQuality("moneda", character.qualities.moneda+1);
+                system.setCharacterText("<p>Perfecto. Ahora tienes una moneda.</p>");
+              },
+             "menosmoneda1": function(character, system, to) {
+               system.animateQuality("moneda", character.qualities.moneda-1);
+               system.setCharacterText("<p>¡Has perdido una moneda!</p>");
+             },
+             "menosmoneda2": function(character, system, to) {
+               system.animateQuality("moneda", character.qualities.moneda-1);
+               system.setCharacterText("<p>¡Has perdido una moneda!</p>");
+             }
            }
      }
 

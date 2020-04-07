@@ -1033,7 +1033,7 @@
         }
 
         // Create the animated bar.
-        var totalWidth = 82.6 * newValue;
+        var totalWidth = 62 * newValue;
         var bar = $("#ui_library #progress_bar").clone();
         bar.removeAttr("id");
         var widthElement = bar.find("[data-attr='width']");

@@ -310,7 +310,7 @@ undum.game.situations = {
     "<H1>Patio del recreo</H1>\
     <img src='media/games/tutorial/patio.jpg' class='float_right' width = 350 heigth = 250>\
     <p>Creiste que el fin había llegado, pero lamentandolo te queda seguir en él y seguir\
-    'disfrutando' esta esperiencia.</p>\
+    'disfrutando' esta experiencia.</p>\
     <p>Está Robertina en este hermoso patio y al frente ve un Caballero y le da una <a href='nota'>\
     nota </a>.\ "
   ),
@@ -320,8 +320,79 @@ undum.game.situations = {
     <p><i>Te damos algunas indicaciones de las que deberás seguir, ten cuidado porque puedes ganarlo\
     o perderlo todo, incluso puedes llegar a morir:</i></p>\
     <p><i>-<a href='pcarnivoras'>Las plantas carnívoras</a>.</i></p>\
-    <p><i>-FLor de la vida.</i></p>"
+    <p><i>-<a href='vida'>Flor de la vida</a>.</i></p>"
   ),
+  vida: new undum.SimpleSituation(
+    "<H1>Flor de la vida</H1>\
+    <img src='media/games/tutorial/vida.jpg' width = 350 heigth = 250>\
+    <p>Por fin has llegado hasta hasta aquí, a pesar de no ir por el camino de la flor de la vida...\
+    camino de la flor de la vida... la has encontrado.\
+    Es una hermosa flor, grande y con mucho colorido\
+    que transmite felicidad, libertad... ¡VIDA!</p>\
+    <p>Tras un rato observandola te das cuenta de que puede ser que en su interior\
+    contenga algún objeto que te pueda llevar a la salida, por lo que decides\
+    intentar <a href='florabierta'>abrirla</a>.\
+    Quizás deberias olvidarte, tener la vida en tu poder puede ser muy peligroso, quieres <a href='nota'>volver</a>.</p>"
+  ),
+  florabierta: new undum.SimpleSituation(
+    "<H1>El fin se acerca</H1>\
+    <img src='media/games/tutorial/vida2.jpg'  width = 350 heigth = 250>\
+    <p>No has conseguido abrir la flor, pero observas que poco a poco esta está perdiendo su color.\
+    Empiezas a sentir que algo no va bien,¿qué debes de hacer ahora?\
+    Entonces un pétalo cae y de él un <a href='./sobre' class='once'>sobre</a> aparece.\
+    Al cogerlo, ves que viene con unas <a href='instrucciones'>instrucciones</a>.</p>",
+    {
+          actions:{
+            "sobre": function(character, system, to) {
+              system.setQuality("sobre", 1);
+              system.setCharacterText("<p></p>");
+            },
+            exit: function(character, system, to) {
+                system.setQuality("sobre", character.qualities.sobre);
+              }
+          }
+    }
+  ),
+  instrucciones:new undum.SimpleSituation(
+    "<p> </p>",
+     {
+      enter: function( character, system, from ) {
+        if( character.qualities.sobre ) {
+          system.doLink( "instrucciones2" );
+        } else {
+          system.write( "<p>Al no coger el sobre, no puedes leer las instrucciones.</a></p>\
+          </p>\
+          <p><a href='florabierta'>Quiero volver a coger el sobre</a></p>");
+        }
+      }
+    }
+  ),
+  instrucciones2:new undum.SimpleSituation(
+    "<h1>Instrucciones</h1>\
+    <img src='media/games/tutorial/sobre.jpg' class='float_down' width = 350 heigth = 250>\
+    <p>Empiezas a leer:\
+    <i>Este fertilizante lleva un aporte especial de Vitamina B1, esencial para intensificar\
+    los colores naturales de las flores, aumentando su esplendor y vivacidad. Si estás leyendo esto\
+    es porque has intentado destrozarla, por lo que deberás usar este fertilizante correctamente\
+    si quieres salir viva. Por lo que, disuelve ½ tapón en 4 litros de agua en una botella pulverizadora,\
+    agita y pulveriza sobre la planta. Te recomendamos no mojar la flor con la mezcla, podrías matarla.</i>\
+    No te queda otra, y sigues las instrucciones para salvar la flor y tu <a href='libertad'>vida.</a></p>"
+
+  ),
+  libertad:new undum.SimpleSituation(
+    "<h1>Instrucciones</h1>\
+    <img src='media/games/tutorial/vida.jpg'  width = 350 heigth = 250>\
+    <p>La flor empieza a retomar su magnifico color, demás de empezar a crecer sin parar\
+    hasta que llega un <a href='https://www.youtube.com/watch?v=-CTFKWdIJRo' class='raw' target='_new'>resplandor</a>.</p>\
+    \
+    \
+    <p>Y este hace que te <a href='despertar'>despiertes</a>.</p>"
+  ),
+  despertar:new undum.SimpleSituation(
+      "<H1>¿SUEÑO?</H1>\
+      <img src='media/games/tutorial/sueño.jpg'  width = 350 heigth = 250>\
+      <p> Exacto, todo había sido un sueño, o no.</p>"
+    ),
   pcarnivoras: new undum.SimpleSituation(
     "<H1>Plantas Carnívoras</H1>\
     <img src='media/games/tutorial/carnivoras.jpg' class='float_right' width = 350 heigth = 250>\
@@ -864,6 +935,9 @@ undum.game.qualities = {
     llave: new undum.OnOffQuality(
         "llave", {priority:"0002", group:'progreso', onDisplay:"&#10003;"}
     ),
+    sobre: new undum.OnOffQuality(
+        "sobre", {priority:"0004", group:'progreso', onDisplay:"&#10003;"}
+    ),
     nota: new undum.OnOffQuality(
         "Nota Siniestra", {priority:"0005", group:'objetos', onDisplay:"&#10003;"}
     )
@@ -886,6 +960,7 @@ undum.game.qualities = {
 undum.game.init = function(character, system) {
     character.qualities.moneda = 0;
     system.setQuality( "llave" , false )
+    system.setQuality( "sobre" , false )
     character.qualities.nota = 1;
     system.setCharacterText("<p>Estos son los Objetos que has ido encontrando.</p>");
 };

@@ -325,7 +325,7 @@ undum.game.situations = {
   vida: new undum.SimpleSituation(
     "<H1>Flor de la vida</H1>\
     <img src='media/games/tutorial/vida.jpg' width = 350 heigth = 250>\
-    <p>Por fin has llegado hasta hasta aquí, a pesar de no ir por el camino de la flor de la vida...\
+    <p>Por fin has llegado hasta hasta aquí, a pesar de no ir por el\
     camino de la flor de la vida... la has encontrado.\
     Es una hermosa flor, grande y con mucho colorido\
     que transmite felicidad, libertad... ¡VIDA!</p>\
@@ -362,7 +362,7 @@ undum.game.situations = {
         } else {
           system.write( "<p>Al no coger el sobre, no puedes leer las instrucciones.</a></p>\
           </p>\
-          <p><a href='florabierta'>Quiero volver a coger el sobre</a></p>");
+          <p><a href='florabierta'>Quiero volver a coger el sobre</a> para seguir avanzando.</p>");
         }
       }
     }
@@ -382,15 +382,17 @@ undum.game.situations = {
   libertad:new undum.SimpleSituation(
     "<h1>Instrucciones</h1>\
     <img src='media/games/tutorial/vida.jpg'  width = 350 heigth = 250>\
-    <p>La flor empieza a retomar su magnifico color, además de empezar a crecer sin parar\
-    hasta que llega un increíble <a href='https://www.youtube.com/watch?v=-CTFKWdIJRo' class='raw' target='_new'>resplandor</a>.</p>\
+    <p>La flor empieza poco a poco a retomar su magnifico color, por lo que parece que el fertilizante está\
+    haciendo el efecto esperado, esta empieza a crecer sin parar...\
+    Espera, ¿qué es eso? un increíble <a href='https://www.youtube.com/watch?v=-CTFKWdIJRo' class='raw' target='_new'>resplandor</a>\
+    ha aparecido y te nubla por completo.</p>\
     \
     \
-    <p>Fue tan fuerte el resplandor, que no recuerdas lo que pasó después de él\
-    sólo recuerdas que te <a href='despertar'>despertarte</a>.</p>"
+    <p>El resplandor fue tan fuerte, que no recuerdas lo que pasó después de él\
+    sólo sabes que te has <a href='despertar'>despertado</a> medio aturdida, sudada y nerviosa.</p>"
   ),
   despertar:new undum.SimpleSituation(
-      "<H1>¿SUEÑO?</H1>\
+      "<H1>¿Ha sido todo un sueño?</H1>\
       <img src='media/games/tutorial/sueño.jpg'  width = 350 heigth = 250>\
       <p> Exacto, todo había sido un sueño, o no. Despertaste del sueño\
       parecía tan real que temporalmente te desorientó,\

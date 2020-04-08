@@ -382,16 +382,26 @@ undum.game.situations = {
   libertad:new undum.SimpleSituation(
     "<h1>Instrucciones</h1>\
     <img src='media/games/tutorial/vida.jpg'  width = 350 heigth = 250>\
-    <p>La flor empieza a retomar su magnifico color, demás de empezar a crecer sin parar\
-    hasta que llega un <a href='https://www.youtube.com/watch?v=-CTFKWdIJRo' class='raw' target='_new'>resplandor</a>.</p>\
+    <p>La flor empieza a retomar su magnifico color, además de empezar a crecer sin parar\
+    hasta que llega un increíble <a href='https://www.youtube.com/watch?v=-CTFKWdIJRo' class='raw' target='_new'>resplandor</a>.</p>\
     \
     \
-    <p>Y este hace que te <a href='despertar'>despiertes</a>.</p>"
+    <p>Fue tan fuerte el resplandor, que no recuerdas lo que pasó después de él\
+    sólo recuerdas que te <a href='despertar'>despertarte</a>.</p>"
   ),
   despertar:new undum.SimpleSituation(
       "<H1>¿SUEÑO?</H1>\
       <img src='media/games/tutorial/sueño.jpg'  width = 350 heigth = 250>\
-      <p> Exacto, todo había sido un sueño, o no.</p>"
+      <p> Exacto, todo había sido un sueño, o no. Despertaste del sueño\
+      parecía tan real que temporalmente te desorientó,\
+      y te hizo sentir por un momento como si el mundo del sueño fuera tan real como\
+      el mundo “real”.\
+      A veces es normal confundir los sueños con la relidad, te\
+      recomiendo que hagas un diario de sueños y apuntar lo que sueñes en una\
+      libreta nada más despertar, así tendrás un registro externo de lo que\
+      has soñado y no dependerás de tu memoria.</p>\
+      \
+      <p>FIN</p>"
     ),
   pcarnivoras: new undum.SimpleSituation(
     "<H1>Plantas Carnívoras</H1>\

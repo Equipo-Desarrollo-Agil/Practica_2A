@@ -232,7 +232,7 @@ undum.game.situations = {
       "<H1>Cofre misterioso</H1>\
       <img src='media/games/tutorial/cofre.jpeg' class='float_right' width = 250 heigth = 250>\
       <p>Como bien hemos dicho, hay un cofre misterioso. quizá al <a href='cofre1'>abrirlo</a> puede que se encuentre algo.</p>\
-      <p><a href='escenaizquierda'>Abanzamos</a> hacia el pasillo derecho para abrir la puerta.</p>"
+      <p><a href='escenaizquierda'>Avanzamos</a> hacia el pasillo derecho para abrir la puerta.</p>"
     ),
     cofre1: new undum.SimpleSituation(
         "<img src='media/games/tutorial/llave.jpeg' class='float_right' width = 200 heigth = 200>\
@@ -948,7 +948,7 @@ undum.game.qualities = {
         "llave", {priority:"0002", group:'progreso', onDisplay:"&#10003;"}
     ),
     sobre: new undum.OnOffQuality(
-        "sobre", {priority:"0004", group:'progreso', onDisplay:"&#10003;"}
+        "sobre", {priority:"0004", group:'objetos', onDisplay:"&#10003;"}
     ),
     nota: new undum.OnOffQuality(
         "Nota Siniestra", {priority:"0005", group:'objetos', onDisplay:"&#10003;"}

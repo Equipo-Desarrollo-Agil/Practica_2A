@@ -303,7 +303,7 @@ undum.game.situations = {
       "<H1>Pasillo final</H1>\
       <img src='media/games/tutorial/puerta.jpg' class='float_right' width = 250 heigth = 250>\
       <p>Has abierto la puerta correcta y con tu llave ya puedes seguir tu camino y por FIN ser LIBRE.</p>\
-      <p>Espero que te hayas divertido en el juego del laberinto y hayas consegido todas las monedas\
+      <p>Espero que te hayas divertido en el juego del laberinto y hayas conseguido todas las monedas\
       que se encontraban en él.</p>"
     ),
 	      escenasemilibertad: new undum.SimpleSituation(
@@ -402,7 +402,7 @@ undum.game.situations = {
       recomiendo que hagas un diario de sueños y apuntar lo que sueñes en una\
       libreta nada más despertar, así tendrás un registro externo de lo que\
       has soñado y no dependerás de tu memoria.\
-      Espero que te hayas divertido en el juego del laberinto y hayas consegido todas las monedas\
+      Espero que te hayas divertido en el juego del laberinto y hayas conseguido todas las monedas\
       que se encontraban en él.</p>\
       \
       <p>FIN</p>"

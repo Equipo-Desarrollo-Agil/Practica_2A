@@ -237,7 +237,7 @@ undum.game.situations = {
     cofre1: new undum.SimpleSituation(
         "<img src='media/games/tutorial/llave.jpeg' class='float_right' width = 200 heigth = 200>\
 		<p>¡MARAVILLOSO! Hemos encontrado <a href='./llave' class='once'>la llave</a>.\
-		Al lado de la llave te encurentras una nota que dice: La salida se debe seguir, pero no se debe mirar. Ya podemos ir en busca de la salida.\
+		Al lado de la llave te encuentras una nota que dice: La salida se debe seguir, pero no se debe mirar. Ya podemos ir en busca de la salida.\
         <a href='escenaizquierda'>Cerrar el cofre</a>.</p>",
         {
               actions:{
@@ -252,7 +252,7 @@ undum.game.situations = {
         }
     ),
     escenaizquierda: new undum.SimpleSituation(
-      "<p>Antes de seguir abanzando tienes que saber que la llave es fundamental para salir del laberinto.</p>",
+      "<p>Antes de seguir avanzando tienes que saber que la llave es fundamental para salir del laberinto.</p>",
       {
        enter: function( character, system, from ) {
          if( character.qualities.llave ) {
@@ -401,7 +401,9 @@ undum.game.situations = {
       A veces es normal confundir los sueños con la relidad, te\
       recomiendo que hagas un diario de sueños y apuntar lo que sueñes en una\
       libreta nada más despertar, así tendrás un registro externo de lo que\
-      has soñado y no dependerás de tu memoria.</p>\
+      has soñado y no dependerás de tu memoria.\
+      Espero que te hayas divertido en el juego del laberinto y hayas consegido todas las monedas\
+      que se encontraban en él.</p>\
       \
       <p>FIN</p>"
     ),

@@ -421,24 +421,25 @@ undum.game.situations = {
      <p>Bromelia es una planta un poco bromista.</p>\
      <p>Drosera le encanta el olor humano, qué curioso.</p>\
      <p>Rueda de agua se hace fuerte cuando le dan mucha agua.</p>\
-     <p>Planta plátano es dulce y soñador.</p>",
+     <p>Planta plátano es dulce y soñador.</p>\
+     <p>Si crees que has sobrevivido puedes <a href='nota'>volver </a>.</p>",
      {
            actions:{
               "moneda1": function(character, system, to) {
                 system.animateQuality("moneda", character.qualities.moneda+1);
-                system.setCharacterText("<p>Perfecto. Ahora tienes una moneda.</p>");
+                system.setCharacterText("<p>Drosera cuando huele el olor de los humanos se vuelve inofensiva.</p>");
               },
               "moneda2": function(character, system, to) {
                 system.animateQuality("moneda", character.qualities.moneda+1);
-                system.setCharacterText("<p>Perfecto. Ahora tienes una moneda.</p>");
+                system.setCharacterText("<p>Al darle mucha agua se hace tan fuerte que expulsa la moneda.</p>");
               },
              "menosmoneda1": function(character, system, to) {
                system.animateQuality("moneda", character.qualities.moneda-1);
-               system.setCharacterText("<p>¡Has perdido una moneda!</p>");
+               system.setCharacterText("<p>A todo el mundo lo que nos gusta son las monedas.</p>");
              },
              "menosmoneda2": function(character, system, to) {
                system.animateQuality("moneda", character.qualities.moneda-1);
-               system.setCharacterText("<p>¡Has perdido una moneda!</p>");
+               system.setCharacterText("<p>Las bromas con esta planta te pueden jugar malas pasadas.</p>");
              }
            }
      }

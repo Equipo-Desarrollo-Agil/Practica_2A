@@ -68,10 +68,10 @@ Hemos tenido una mejor gestión a la hora de gestionarnos los puntos de historia
 Los requisitos que tenemos pensado implementar en el próximo Sprint son los relacionados con el juego online.
 
 ### Sprint Retrospective:
-1.Como usuario, quiero una barra de progreso representando la cantidad de monedas para ver que porcentaje del juego llevo completo: ha sido implementada por Álvaro y modificada por Teresa.
-2.Como usuario, quiero que el jugador pueda resolver puzzles estilo enigma interactuando con objetos: ha sido implementada por Abraham.
-3.Como usuario quiero que las imagenes de cada situacion cambien en funcion de los objetos que tenga el jugador: ha sido implementada por Ana.
-4.El usuario quiere que se incluya nuevas situaciones en las nuevas versiones: ha sido realizada por Teresa y Ana.
-5.Como usuario quiero que el juego esté en una landing page: ha sido realizada por Álvaro.
-6.Como usario quiero que el juego pueda jugar online: ha sido realizada por Álvaro.
-De aquí concluimos que con la participación de cada uno, alguno ha podido tener una participación más alta que otro.
+*1.Como usuario, quiero una barra de progreso representando la cantidad de monedas para ver que porcentaje del juego llevo completo: ha sido implementada por Álvaro y modificada por Teresa.
+*2.Como usuario, quiero que el jugador pueda resolver puzzles estilo enigma interactuando con objetos: ha sido implementada por Abraham.
+*3.Como usuario quiero que las imagenes de cada situacion cambien en funcion de los objetos que tenga el jugador: ha sido implementada por Ana.
+*4.El usuario quiere que se incluya nuevas situaciones en las nuevas versiones: ha sido realizada por Teresa y Ana.
+*5.Como usuario quiero que el juego esté en una landing page: ha sido realizada por Álvaro.
+*6.Como usario quiero que el juego pueda jugar online: ha sido realizada por Álvaro.
+*De aquí concluimos que con la participación de cada uno, alguno ha podido tener una participación más alta que otro.

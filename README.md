@@ -62,6 +62,16 @@ Hemos elegido estas tareas porque nos resultaban interesantes para la finalizaci
 Nos dimos cuenta de que nos daba tiempo relaizar alguna historia más para este sprint, porque lo que añadimos una más (Como usuario quiero acceder al juego mediante login+contraseña y darme de alta en el  sitio web).
 
 ### Sprint Review:
-141 PH completados y sobro tiempo. El valor completado ha sido de 265 + ∞. 
+Hemos tenido 141 PH (puntos de historia) completados. El valor completado ha sido de 265 + ∞.
+Se han implementado todos los requisitos menos el último que se añadió en el Backlog Refinement.
+Hemos tenido una mejor gestión a la hora de gestionarnos los puntos de historia. Nos está costando más de lo que creíamos el punto de historia del login/contraseña, y la solución que le hemos dado es hacer un estudio más profundo de su implementación en el próximo Sprint.
+Los requisitos que tenemos pensado implementar en el próximo Sprint son los relacionados con el juego online.
 
 ### Sprint Retrospective:
+1.Como usuario, quiero una barra de progreso representando la cantidad de monedas para ver que porcentaje del juego llevo completo: ha sido implementada por Álvaro y modificada por Teresa.
+2.Como usuario, quiero que el jugador pueda resolver puzzles estilo enigma interactuando con objetos: ha sido implementada por Abraham.
+3.Como usuario quiero que las imagenes de cada situacion cambien en funcion de los objetos que tenga el jugador: ha sido implementada por Ana.
+4.El usuario quiere que se incluya nuevas situaciones en las nuevas versiones: ha sido realizada por Teresa y Ana.
+5.Como usuario quiero que el juego esté en una landing page: ha sido realizada por Álvaro.
+6.Como usario quiero que el juego pueda jugar online: ha sido realizada por Álvaro.
+De aquí concluimos que con la participación de cada uno, alguno ha podido tener una participación más alta que otro.

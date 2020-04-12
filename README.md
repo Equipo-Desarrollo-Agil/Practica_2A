@@ -48,3 +48,20 @@ En la reunión llegamos a la decisión de que ibamos bien de tiempo y habíamos 
 
 ### Proximo sprint:
 Se ha pensado que en el proximo sprint incorporaremos enigmas para el jugador y cambiar para que cada escena se vea individualmente. Tambien cambiar imagenes dependiendo de los objetos, y barra de progreso. En el PBR añadiremos más requisitos.
+
+## Memoria Sprint 2:
+
+### Imagen de Product Backlog terminado el sprint:
+<img src="">
+
+Hemos elegido estas tareas porque nos resultaban interesantes para la finalización del diseño del juego. No hemos descompuesto las tareas porque eran muy simples para ello. En este Sprint el Product Owner ha sido Abraham Gutiérrez.
+
+### Product Backlog Refinement:
+<img src="">
+
+Nos dimos cuenta de que nos daba tiempo relaizar alguna historia más para este sprint, porque lo que añadimos una más (Como usuario quiero acceder al juego mediante login+contraseña y darme de alta en el  sitio web).
+
+### Sprint Review:
+141 PH completados y sobro tiempo. El valor completado ha sido de 265 + ∞. 
+
+### Sprint Retrospective:

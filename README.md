@@ -51,13 +51,13 @@ Se ha pensado que en el proximo sprint incorporaremos enigmas para el jugador y 
 
 ## Memoria Sprint 2:
 
-### Imagen de Product Backlog terminado el sprint:
-<img src="">
+### Imagen de Product Backlog:
+<img src="Captura de pantalla (74).png">
 
 Hemos elegido estas tareas porque nos resultaban interesantes para la finalización del diseño del juego. No hemos descompuesto las tareas porque eran muy simples para ello. En este Sprint el Product Owner ha sido Abraham Gutiérrez.
 
 ### Product Backlog Refinement:
-<img src="">
+<img src="Captura de pantalla (83).png">
 
 Nos dimos cuenta de que nos daba tiempo relaizar alguna historia más para este sprint, porque lo que añadimos una más (Como usuario quiero acceder al juego mediante login+contraseña y darme de alta en el  sitio web).
 

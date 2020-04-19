@@ -706,16 +706,16 @@ undum.game.id = "349baf43-9ade-49a8-86d0-24e3de3ce072";
   * that quality will never show up in the character bar in the UI. */
  undum.game.qualities = {
      moneda: new undum.IntegerQuality(
-         "Monedas", {priority:"0003", group:'progreso', onDisplay:"&#10003;"}
+         "Coins", {priority:"0003", group:'progreso', onDisplay:"&#10003;"}
      ),
      llave: new undum.OnOffQuality(
-         "llave", {priority:"0002", group:'progreso', onDisplay:"&#10003;"}
+         "Key", {priority:"0002", group:'progreso', onDisplay:"&#10003;"}
      ),
      sobre: new undum.OnOffQuality(
-         "sobre", {priority:"0004", group:'objetos', onDisplay:"&#10003;"}
+         "Envelope", {priority:"0004", group:'objetos', onDisplay:"&#10003;"}
      ),
      nota: new undum.OnOffQuality(
-         "Nota Siniestra", {priority:"0005", group:'objetos', onDisplay:"&#10003;"}
+         "Sinister Note", {priority:"0005", group:'objetos', onDisplay:"&#10003;"}
      )
  };
 
@@ -726,8 +726,8 @@ undum.game.id = "349baf43-9ade-49a8-86d0-24e3de3ce072";
   * the end. It is an error to have a quality definition belong to a
   * non-existent group. */
     undum.game.qualityGroups = {
-      progreso: new undum.QualityGroup('Progreso', {priority:"0001"}),
-      objetos: new undum.QualityGroup('Objetos', {priority:"0002"})
+      progreso: new undum.QualityGroup('Progress', {priority:"0001"}),
+      objetos: new undum.QualityGroup('Objets', {priority:"0002"})
    };
 
  // ---------------------------------------------------------------------------

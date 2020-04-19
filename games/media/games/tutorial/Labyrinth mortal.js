@@ -104,8 +104,7 @@ undum.game.id = "349baf43-9ade-49a8-86d0-24e3de3ce072";
      ),
      escena5: new undum.SimpleSituation(
  			"<p>Once you take the coin, you find yourself at the entrance of 2 paths, \
-      each with a peculiar sign at the entrance,  <a href='escena6'>Path of the sinister</a> \
-      o <a href='escena7'>Path of the flower of life.</a></p>"
+        each with a peculiar sign at the entrance, <a href='escena6'>Path of the sinister</a> or <a href='escena7'>Path of the flower of life.</a></p>"
  		),
      escena6: new undum.SimpleSituation(
        "<h1>Path of the sinister</h1>\
@@ -231,7 +230,7 @@ undum.game.id = "349baf43-9ade-49a8-86d0-24e3de3ce072";
     escena11: new undum.SimpleSituation(
       "<H1>Mysterious chest</H1>\
       <img src='media/games/tutorial/cofre.jpeg' class='float_right' width = 250 heigth = 250>\
-      <p>You wonder if you should  <a href='cofre1'>abrirlo</a> open the chest</p>\
+      <p>You wonder if you should  <a href='cofre1'>open the chest</a>.</p>\
       <p>or if you should <a href='escenaizquierda'>continue</a> to the right passage and open the door. </p>"
     ),
     cofre1: new undum.SimpleSituation(

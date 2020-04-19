@@ -727,7 +727,7 @@ undum.game.id = "349baf43-9ade-49a8-86d0-24e3de3ce072";
   * non-existent group. */
     undum.game.qualityGroups = {
       progreso: new undum.QualityGroup('Progress', {priority:"0001"}),
-      objetos: new undum.QualityGroup('bjects', {priority:"0002"})
+      objetos: new undum.QualityGroup('Objects', {priority:"0002"})
    };
 
  // ---------------------------------------------------------------------------

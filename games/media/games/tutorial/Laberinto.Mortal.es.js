@@ -144,7 +144,7 @@ undum.game.situations = {
 	   <p>Al recoger el libro, oyes un ruido del cofre y el cofre se cierra solo.\
 	   Abres el libro y te encuentras <a href='./moneda' class='once'>una moneda</a>.\
 	   Al recoger la moneda, ves que el libro sólo tiene una página con palabras escritas.\
-	   El libro dice, has evitado muerte por tu inteligencia, abre el cofre de nuevo y moriras.\
+	   El libro dice, has evitado muerte por tu inteligencia, abre el cofre de nuevo y morirás.\
 	   Debes dejar el libro y <a href='escenaluz2'>volver de adonde viniste</a>.</p>",
 	   {
             actions:{
@@ -296,7 +296,7 @@ undum.game.situations = {
 	puertaincorrecta: new undum.SimpleSituation(
 	"<H1>Decision Lamentable</H1>\
 	<img src='media/games/tutorial/muerte_cofre2.png' class='float_right' width = 350 heigth = 250>\
-	<p>Intentaste abrir la puerta que no era y la llave se te partio, dejandote \
+	<p>Intentaste abrir la puerta que no era y la llave se te partió, dejándote \
 	sin forma de salir del laberinto.</p>"
 	),
     escenafinal: new undum.SimpleSituation(
@@ -309,7 +309,7 @@ undum.game.situations = {
 	      escenasemilibertad: new undum.SimpleSituation(
     "<H1>Patio del recreo</H1>\
     <img src='media/games/tutorial/patio.jpg' class='float_right' width = 350 heigth = 250>\
-    <p>Creiste que el fin había llegado, pero lamentandolo te queda seguir en él y seguir\
+    <p>Creiste que el fin había llegado, pero lamentándolo te queda seguir en él y seguir\
     'disfrutando' esta experiencia.</p>\
     <p>Está Robertina en este hermoso patio y al frente ve un Caballero y le da una <a href='nota'>\
     nota </a>.\ "
@@ -329,7 +329,7 @@ undum.game.situations = {
     camino de la flor de la vida... la has encontrado.\
     Es una hermosa flor, grande y con mucho colorido\
     que transmite felicidad, libertad... ¡VIDA!</p>\
-    <p>Tras un rato observandola te das cuenta de que puede ser que en su interior\
+    <p>Tras un rato observándola te das cuenta de que puede ser que en su interior\
     contenga algún objeto que te pueda llevar a la salida, por lo que decides\
     intentar <a href='florabierta'>abrirla</a>.\
     Quizás deberias olvidarte, tener la vida en tu poder puede ser muy peligroso, quieres <a href='nota'>volver</a>.</p>"
@@ -339,7 +339,7 @@ undum.game.situations = {
     <img src='media/games/tutorial/vida2.jpg'  width = 350 heigth = 250>\
     <p>No has conseguido abrir la flor, pero observas que poco a poco esta está perdiendo su color.\
     Empiezas a sentir que algo no va bien,¿qué debes de hacer ahora?\
-    Entonces un pétalo cae y de él un <a href='./sobre' class='once'>sobre</a> aparece.\
+    Entonces un pétalo cae y de ella un <a href='./sobre' class='once'>sobre</a> aparece.\
     Al cogerlo, ves que viene con unas <a href='instrucciones'>instrucciones</a>.</p>",
     {
           actions:{

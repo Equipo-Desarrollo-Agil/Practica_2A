@@ -41,7 +41,7 @@ undum.game.id = "349baf43-9ade-49a8-86d0-24e3de3ce072";
          only to find a note that reads the following: </p>\
          <p><i> Hello Robertina, you must be wondering why you are here, \
          for now just know that you’re locked in and the only way to escape is to find\
-         the key to the exit, which will be a true test of your cunning wits. I hope you\
+         the key to exit, which will be a true test of your cunning wits. I hope you\
          payed attention in school because this won’t be easy. </i></p>\
          <p>After reading this you look around you and determine your options.</p>\
          \
@@ -59,7 +59,7 @@ undum.game.id = "349baf43-9ade-49a8-86d0-24e3de3ce072";
         Determined, you take a peek around the corner. \
         \
        What’s that? A bright source of light emanates from the passage.\
-       <p><a href='escena3'>You would like to discover what shines so inte</a></p>"
+       <p><a href='escena3'>You would like to discover what shines so intense</a></p>"
      ),
      escena3:new undum.SimpleSituation(
        "<h1>The Coin</h1>\
@@ -67,7 +67,7 @@ undum.game.id = "349baf43-9ade-49a8-86d0-24e3de3ce072";
        <p>A bit disgruntled as you turn the corner and curious to know what\
        shined so intensely, you has something round and gold at the end of the passage,\
        it’s…. A <a href='./moneda' class='once'>COIN</a> .\
-       Right enxt to it, theres a strange piece of paper, on which is written the following: </p>\
+       Right next to it, theres a strange piece of paper, on which is written the following: </p>\
        <p><i> You’re were stunned by the brightness of the coin weren’t you? \
        You’ll find that each of these coins will be your motivating factor to get \
        you out of the labyrinth, as you’ll find 5 of these coins on your route to escape,\
@@ -242,7 +242,7 @@ undum.game.id = "349baf43-9ade-49a8-86d0-24e3de3ce072";
               actions:{
                 "llave": function(character, system, to) {
                   system.setQuality("llave", 1);
-                  system.setCharacterText("<p>The key is of utmost importance</p>");
+                  system.setCharacterText("<p>The key is the most importance</p>");
                 },
                 exit: function(character, system, to) {
                     system.setQuality("llave", character.qualities.llave);
@@ -299,7 +299,7 @@ undum.game.id = "349baf43-9ade-49a8-86d0-24e3de3ce072";
     escenafinal: new undum.SimpleSituation(
       "<H1>Final passage</H1>\
       <img src='media/games/tutorial/puerta.jpg' class='float_right' width = 250 heigth = 250>\
-      <p>You opened the correct door and you can continue and at las be FREE!.\
+      <p>You opened the correct door and you can continue and at last be FREE!.\
        Hope you enjoyed the game and you got all the coins!</p>"
     ),
 

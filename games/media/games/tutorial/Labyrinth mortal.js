@@ -346,6 +346,20 @@ undum.game.id = "349baf43-9ade-49a8-86d0-24e3de3ce072";
             }
       }
     ),
+      instrucciones:new undum.SimpleSituation(
+      "<p> </p>",
+       {
+        enter: function( character, system, from ) {
+          if( character.qualities.sobre ) {
+            system.doLink( "instrucciones2" );
+          } else {
+            system.write( "<p>By not taking the envelope, you don’t know the instructions.</a></p>\
+            </p>\
+            <p><a href='florabierta'>Go back and get the envelope</a>  in order to continue.</p>");
+          }
+        }
+      }
+    ),
 
      // NB: The 'hub' situation which is the main list of topics, is
      // defined wholly in the HTML file, and doesn't have an entry in

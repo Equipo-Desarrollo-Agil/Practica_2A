@@ -316,7 +316,17 @@ undum.game.id = "349baf43-9ade-49a8-86d0-24e3de3ce072";
       <p><i>-<a href='pcarnivoras'>The carnivorous plants</a>.</i></p>\
       <p><i>-<a href='vida'>The flower of life</a>.</i></p>"
     ),
-
+    vida: new undum.SimpleSituation(
+      "<H1>Flower of life</H1>\
+      <img src='media/games/tutorial/vida.jpg' width = 350 heigth = 250>\
+      <p>You finally arrived this far, despite not going through the path\
+      of the flower of life, you found it. It’s a beautiful flower, very large and colorful,\
+      which spreads happiness and freedom, LIFE! After some time\
+      observing the flower, you notice that it may have something inside of it that could help\
+      you escape.You consider <a href='florabierta'>opening it</a>.\
+      Perhaps you should forget about it, as having the power of life in your hands could be\
+      dangerous, you can also <a href='nota'>go back</a>.</p>"
+    ),
 
      // NB: The 'hub' situation which is the main list of topics, is
      // defined wholly in the HTML file, and doesn't have an entry in

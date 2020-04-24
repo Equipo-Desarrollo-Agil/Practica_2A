@@ -308,6 +308,14 @@ undum.game.id = "349baf43-9ade-49a8-86d0-24e3de3ce072";
       <p>You thought it was over, unfortunately you must continue to enjoy this experience. Robertina is in this wonderful park and a gentleman gives her a <a href='nota'>\
       note.</a></p>"
     ),
+     nota: new undum.SimpleSituation(
+      "<p><i>Beautiful playgroudn right? In it you’ll find many unsolved mysteries,\
+       do you think you’ll be able to find the exit? </i></p>\
+      <p><i>We’ll give you some instructions to follow, be careful because you\
+      can win or lose it all, and you could even die:</i></p>\
+      <p><i>-<a href='pcarnivoras'>The carnivorous plants</a>.</i></p>\
+      <p><i>-<a href='vida'>The flower of life</a>.</i></p>"
+    ),
 
 
      // NB: The 'hub' situation which is the main list of topics, is

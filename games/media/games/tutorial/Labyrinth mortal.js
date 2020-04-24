@@ -305,8 +305,8 @@ undum.game.id = "349baf43-9ade-49a8-86d0-24e3de3ce072";
      escenasemilibertad: new undum.SimpleSituation(
       "<H1>Playground</H1>\
       <img src='media/games/tutorial/patio.jpg' class='float_right' width = 350 heigth = 250>\
-      <p>You thought it was over, unfortunately you must continue to enjoy this experience. Robertina is in this wonderful park and a gentleman gives her a <a href='nota'>\
-      note.</a></p>"
+      <p>You thought it was over, unfortunately you must continue to enjoy this experience. Robertina is\
+      in this wonderful park and a gentleman gives her a <a href='nota'> note.</a></p>"
     ),
      nota: new undum.SimpleSituation(
       "<p><i>Beautiful playgroudn right? In it you’ll find many unsolved mysteries,\
@@ -330,7 +330,7 @@ undum.game.id = "349baf43-9ade-49a8-86d0-24e3de3ce072";
       florabierta: new undum.SimpleSituation(
       "<H1>The end is near</H1>\
       <img src='media/games/tutorial/vida2.jpg'  width = 350 heigth = 250>\
-      <p>o	You weren’t able to open the flower, but you notice that little\
+      <p>You weren’t able to open the flower, but you notice that little\
       by little it’s losing its color. You start to feel that something is wrong,\
       what should you do? A petal falls and from it an <a href='./sobre' class='once'>envelope</a> appears.\
       When you grab it, you see that it comes with <a href='instrucciones'>instructions</a>.</p>",
@@ -355,7 +355,7 @@ undum.game.id = "349baf43-9ade-49a8-86d0-24e3de3ce072";
           } else {
             system.write( "<p>By not taking the envelope, you don’t know the instructions.</a></p>\
             </p>\
-            <p><a href='florabierta'>Go back and get the envelope</a>  in order to continue.</p>");
+            <p><a href='florabierta'>Go back and get the envelope</a> in order to continue.</p>");
           }
         }
       }

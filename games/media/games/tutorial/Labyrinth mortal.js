@@ -302,6 +302,12 @@ undum.game.id = "349baf43-9ade-49a8-86d0-24e3de3ce072";
       <p>You opened the correct door and you can continue and at last be FREE!.\
        Hope you enjoyed the game and you got all the coins!</p>"
     ),
+     escenasemilibertad: new undum.SimpleSituation(
+      "<H1>Playground</H1>\
+      <img src='media/games/tutorial/patio.jpg' class='float_right' width = 350 heigth = 250>\
+      <p>You thought it was over, unfortunately you must continue to enjoy this experience. Robertina is in this wonderful park and a gentleman gives her a <a href='nota'>\
+      note.</a></p>"
+    ),
 
 
      // NB: The 'hub' situation which is the main list of topics, is

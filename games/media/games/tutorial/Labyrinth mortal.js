@@ -327,6 +327,25 @@ undum.game.id = "349baf43-9ade-49a8-86d0-24e3de3ce072";
       Perhaps you should forget about it, as having the power of life in your hands could be\
       dangerous, you can also <a href='nota'>go back</a>.</p>"
     ),
+      florabierta: new undum.SimpleSituation(
+      "<H1>The end is near</H1>\
+      <img src='media/games/tutorial/vida2.jpg'  width = 350 heigth = 250>\
+      <p>o	You weren’t able to open the flower, but you notice that little\
+      by little it’s losing its color. You start to feel that something is wrong,\
+      what should you do? A petal falls and from it an <a href='./sobre' class='once'>envelope</a> appears.\
+      When you grab it, you see that it comes with <a href='instrucciones'>instructions</a>.</p>",
+      {
+            actions:{
+              "sobre": function(character, system, to) {
+                system.setQuality("sobre", 1);
+                system.setCharacterText("<p></p>");
+              },
+              exit: function(character, system, to) {
+                  system.setQuality("sobre", character.qualities.sobre);
+                }
+            }
+      }
+    ),
 
      // NB: The 'hub' situation which is the main list of topics, is
      // defined wholly in the HTML file, and doesn't have an entry in

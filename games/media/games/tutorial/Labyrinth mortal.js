@@ -395,7 +395,8 @@ undum.game.id = "349baf43-9ade-49a8-86d0-24e3de3ce072";
      collected all the coins.</p>"
    ),
    pcarnivoras: new undum.SimpleSituation(
-     "<p>	Here, you can see our marvelous and lovely plants…\
+     "<H1>Carnivorous plants</H1>\
+      <p>Here, you can see our marvelous and lovely plants…\
       1.<ahref='./menosmoneda1'class='once'>Venus flytrap a>\
 	    2.<ahref='./menosmoneda2'class='once'>Bromeliad.</a>\
 	    3.<a href='./moneda1' class='once'>Sundew</a>.\
@@ -433,7 +434,8 @@ undum.game.id = "349baf43-9ade-49a8-86d0-24e3de3ce072";
      you go into a deep deep sleep. Be careful with the next one.</p>"
   ),
   escena7: new undum.SimpleSituation(
-    "<p>o	You turned right and in front of you is something shuddering, there’s\
+    "<H1>Path of the flower of life</H1>\
+     <p>You turned right and in front of you is something shuddering, there’s\
      a wall which blocks the passage, soyou decide to go back from where you\
      came, but when you turn around you realize there was something strange \
      on the wall, you can <a href='escenadetalle'>inspect the wall further</a>,\
@@ -456,7 +458,7 @@ undum.game.id = "349baf43-9ade-49a8-86d0-24e3de3ce072";
          optionText: "What Undum Games are Made Of",
          displayOrder: 1
      }),
-	     escenadetalle: new undum.SimpleSituation(
+      escenadetalle: new undum.SimpleSituation(
       "<p> Resulta que al ver bien el muro observas que efectivamente ves que\
       las piedras no son como el resto del laberinto, además tienen una posicion\
       extraña si las comparas con las demás.<br>\
@@ -478,16 +480,16 @@ undum.game.id = "349baf43-9ade-49a8-86d0-24e3de3ce072";
       }
     ),
     escena8: new undum.SimpleSituation(
-      "<h1> Final de la flor de la vida </h1>\
+      "<h1> End of flower of life </h1>\
       <img src='media/games/tutorial/pasillomoneda.jpg' width = 200 heigth = 150>\
-      <p> El muro se abre ante ti y detrás de él encuentras \
-      <a href='./moneda' class='once'>la moneda</a> que insertaste antes. Después de esto ves una especie de\
-      sala que ocultaba este muro, decides <a href='escena8moneda'>entrar a la sala</a>.</p>",
+      <p>The wall opens ahead of you and behind it you find  \
+      <a href='./moneda' class='once'>the coin</a> you just inserted. You notice a space \
+	in the area that the wall took up, you decide to <a href='escena8moneda'>go in</a>.</p>",
       {
             actions:{
               "moneda": function(character, system, to) {
                 system.animateQuality("moneda", character.qualities.moneda+1);
-                system.setCharacterText("<p>Perfecto. Ahora tienes una moneda.</p>");
+                system.setCharacterText("<p>Perfect, now you have another coin.</p>");
               }
             }
       }
@@ -500,41 +502,38 @@ undum.game.id = "349baf43-9ade-49a8-86d0-24e3de3ce072";
  					if( character.qualities.moneda ) {
  						system.doLink( "escenamonedas" );
  					} else {
- 						system.write( "<p>¿No crees que te has dejado atrás algo?\
-            <a href='escena8'>Quiero volver a coger la moneda.</a></p>");
+ 						system.write( "<p>Don’t you think you’ve left something behind?\
+            <a href='escena8'>Go back and get the coin.</a></p>");
  					}
  				}
  			}
     ),
     escenamonedas: new undum.SimpleSituation(
-      "<h1> Sala oculta </h1>\
-      <p>En el centro de la sala hay un pedestal\
-      en el cuál se encuentra una brillante y hermosa moneda y al lado otra\
-      moneda igual que la anterior pero oxidada y sucia, te acercas al pedestal\
-      para mirarlas y te das cuenta de que son iguales a la que tienes. Al lado\
-      de estas monedas, en el pedestal, hay un grabado que dice: <i>Vida y\
-      Muerte, dos caras de la misma moneda, al igual que esta sala en donde\
-      puede llegar tu final o seguir en la flor de la vida</i>. <br>\
-      Después de leer esto decides coger la <a href='escenamuerte'>\
-      moneda brillante</a>, la <a href='./monedaoxidada' class='once'> moneda oxidada\
-      </a> o <a href='escena5'>volver por dónde viniste</a></p>",
+      "<h1>Hidden room </h1>\
+      <p>In the center there is a pedestal where you find a shiny coin next \
+	to a rusted coin. You get closer to the pedestal to look at them and \
+	you notice they’re the same as the coins you have. Next to the coins, \
+	on the pedestal, there’s some writing that says:  <i>Life and Death, two\
+	faces of the same coin, just like this space where the flower of life may end</i>. <br>\
+       After reading this you’re unsure if to <a href='escenamuerte'>\
+     take the shiny coin</a>, la <a href='./monedaoxidada' class='once'> > take the rusted coin\
+      </a> o <a href='escena5'>go back from where you came</a></p>",
       {
             actions:{
               "monedaoxidada": function(character, system, to) {
                 system.animateQuality("moneda", character.qualities.moneda+1);
-                system.setCharacterText("<p>Perfecto. Ahora tienes una moneda.</p>");
+                system.setCharacterText("<p>Perfect, now you have another coin.</p>");
               }
 
             }
       }
     ),
     escenamuerte: new undum.SimpleSituation(
-      "<h1> Tu final llegó antes de tiempo </h1>\
-      <p>A veces no te puedes fiar de las apariencias pues la moneda estaba\
-      brillante debido a un fuerte veneno que al tocarlo has fallecido\
-      instantáneamente, ya nunca sabrás quién te encerró allí ni lo que\
-      oculta este laberinto, a no ser que...</p> <br> <br> <br>\
-      <i>pss aquí, F5</i>"
+      "<h1>Your end has come before its time</h1>\
+      <p>Sometimes you cant trust appearances, as the coin was so shiny due to a\
+	powerful venom and you immediately died when you touched it. Now you will \
+	never know how you got to the labyrinth or who brough you, unless…. </p> <br> <br> <br>\
+      <i>psss, right here, F5</i>"
     ),
      todo: new undum.SimpleSituation(
          "<p>Two things can happen in a situation. The character either\

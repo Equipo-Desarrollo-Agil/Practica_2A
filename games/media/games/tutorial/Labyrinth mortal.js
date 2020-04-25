@@ -360,6 +360,85 @@ undum.game.id = "349baf43-9ade-49a8-86d0-24e3de3ce072";
         }
       }
     ),
+    instrucciones2:new undum.SimpleSituation(
+      "<h1>Instructions</h1>\
+      <img src='media/games/tutorial/sobre.jpg' class='float_down' width = 350 heigth = 250>\
+      <p>You begin to read:\
+      <i>This fertilizr carries vitamin B1, which is \
+      essential for intensifying the color of flowers, increasing its splendor.\
+       If you’re reading this it’s because you tried to destroy the flower, for\
+       which you must correctly use the ferilizer if you want to stay alive.\
+       You must dissolve ½ of the fertilizer in 4 liters of water in a bottle\
+       to crush the ferilizer, shake and bpulverize over the plant. Do not\
+       wet the plant with the mix as you could kill it. You have no other\
+       option, you must follow the instructions to save the plant and\
+       your <a href='libertad'>life.</a></p>"
+
+    ),
+    libertad: new undum.SimpleSituation(
+      "<p>	The flower starts to slowly regain its magnificent color, \
+      it seems the fertilizer is causing its desired effect, but it starts \
+      to grow without bounds… What is this? An incredible\
+      <a href='https://www.youtube.com/watch?v=CTFKWdIJRo'class='raw'target='_new'>\
+      radiance</a>	has appeared and it completely stuns you.\
+      The flash was so bright that you don’t remember what happened after\
+      that, you only know that you have <a href='despertar'>awoken</a> \
+      in a cold, nervous sweat.</p>"
+    ),
+    despertar: new undum.SimpleSituation(
+    "<h1>It was just a dream?</h1> \
+     <p>	You wake up from a dream that seemed so real you were temporarily\
+     disoriented amd you felt for a second like the dream world was more real\
+     than real life. It’s normal to confuse dreams with reality, you should\
+     keep a diary of your dreams so you can remember all your dreams and you\
+     won’t depend on your memory. O hope you enjoyed the labyrinth game and\
+     collected all the coins.</p>"
+   ),
+   pcarnivoras: new undum.SimpleSituation(
+     "<p>	Here, you can see our marvelous and lovely plants…\
+      1.<ahref='./menosmoneda1'class='once'>Venus flytrap a>\
+	    2.<ahref='./menosmoneda2'class='once'>Bromeliad.</a>\
+	    3.<a href='./moneda1' class='once'>Sundew</a>.\
+	    4.<a href='./moneda2' class='once'>Water wheel</a>.\
+	    5.<a href='platano'>Banana Plant</a>.\
+      Two of these plants are harmless, others are a thieves, and the last \
+      one it a killer. Venus flytrap eats what everyone enjoys, Bromeliad is\
+      a jokester, Sundew loves the human smell, interesting, Water wheel\
+      becomes strong when it is given more water, the banana plant is a weet\
+      dreamer. If you think you have survived you can <a href='nota'>go back </a>",
+      {
+        actions:{
+	              "moneda1": function(character, system, to) {
+	                system.animateQuality("moneda", character.qualities.moneda+1);
+	                system.setCharacterText("<p>When sundew smells humans it becomes dosile.p>");
+	              },
+	              "moneda2": function(character, system, to) {
+                  system.animateQuality("moneda", character.qualities.moneda+1);
+                  system.setCharacterText("<p>After receiving a lot of water, it becomes so strong it expels a coin.</p>");
+                },
+                "menosmoneda1": function(character, system, to) {
+                  system.animateQuality("moneda", character.qualities.moneda-1);
+                  system.setCharacterText("<p>Everyone likes a coin. p>");
+                },
+                "menosmoneda2": function(character, system, to) {
+                  system.animateQuality("moneda", character.qualities.moneda-1);
+                  system.setCharacterText("<p>Jokes with this plant can be a bit heavy and malicious.</p>");
+                }
+      }
+    }
+  ),
+  platano: new undum.SimpleSituation(
+    "<h1> Mortal plant </h1>\
+    <p>	You chose a plant that has a sweet flavored venom, which will make\
+     you go into a deep deep sleep. Be careful with the next one.</p>"
+  ),
+  escena7: new undum.SimpleSituation(
+    "<p>o	You turned right and in front of you is something shuddering, there’s\
+     a wall which blocks the passage, soyou decide to go back from where you\
+     came, but when you turn around you realize there was something strange \
+     on the wall, you can <a href='escenadetalle'>inspect the wall further</a>,\
+     or not risk anything and<a href='escena5'>go back </a>, cowardly, but smart</p>"
+  ),
 
      // NB: The 'hub' situation which is the main list of topics, is
      // defined wholly in the HTML file, and doesn't have an entry in
@@ -796,3 +875,4 @@ undum.game.id = "349baf43-9ade-49a8-86d0-24e3de3ce072";
      character.qualities.nota = 1;
      system.setCharacterText("<p>These are the objects you've been finding.</p>");
  };
+

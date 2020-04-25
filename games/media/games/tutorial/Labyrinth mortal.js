@@ -456,6 +456,86 @@ undum.game.id = "349baf43-9ade-49a8-86d0-24e3de3ce072";
          optionText: "What Undum Games are Made Of",
          displayOrder: 1
      }),
+	     escenadetalle: new undum.SimpleSituation(
+      "<p> Resulta que al ver bien el muro observas que efectivamente ves que\
+      las piedras no son como el resto del laberinto, además tienen una posicion\
+      extraña si las comparas con las demás.<br>\
+      Percibes que hay un hueco entre dos piedras con una forma muy peculiar,\
+      <i>Se parece mucho a la ranura de una máquina expendera</i>, se te pasa\
+      por la cabeza la idea de <a href='./menosmoneda'>meter\
+      la moneda </a>que cogiste antes pero, ¿y si la pierdes para nada?,\
+      ya le tienes más cariño que a tu hermano a esa moneda, lo mismo preferirías\
+      <a href='escena5'> volver por donde viniste.</a></p>",
+      {
+            actions:{
+              "menosmoneda": function(character, system, to) {
+                system.animateQuality("moneda", character.qualities.moneda-1);
+                system.setCharacterText("<p>¡Has perdido una moneda!</p>");
+                system.doLink( "escena8" );
+              }
+
+            }
+      }
+    ),
+    escena8: new undum.SimpleSituation(
+      "<h1> Final de la flor de la vida </h1>\
+      <img src='media/games/tutorial/pasillomoneda.jpg' width = 200 heigth = 150>\
+      <p> El muro se abre ante ti y detrás de él encuentras \
+      <a href='./moneda' class='once'>la moneda</a> que insertaste antes. Después de esto ves una especie de\
+      sala que ocultaba este muro, decides <a href='escena8moneda'>entrar a la sala</a>.</p>",
+      {
+            actions:{
+              "moneda": function(character, system, to) {
+                system.animateQuality("moneda", character.qualities.moneda+1);
+                system.setCharacterText("<p>Perfecto. Ahora tienes una moneda.</p>");
+              }
+            }
+      }
+
+    ),
+    escena8moneda:new undum.SimpleSituation(
+      "<p></p>",
+       {
+ 				enter: function( character, system, from ) {
+ 					if( character.qualities.moneda ) {
+ 						system.doLink( "escenamonedas" );
+ 					} else {
+ 						system.write( "<p>¿No crees que te has dejado atrás algo?\
+            <a href='escena8'>Quiero volver a coger la moneda.</a></p>");
+ 					}
+ 				}
+ 			}
+    ),
+    escenamonedas: new undum.SimpleSituation(
+      "<h1> Sala oculta </h1>\
+      <p>En el centro de la sala hay un pedestal\
+      en el cuál se encuentra una brillante y hermosa moneda y al lado otra\
+      moneda igual que la anterior pero oxidada y sucia, te acercas al pedestal\
+      para mirarlas y te das cuenta de que son iguales a la que tienes. Al lado\
+      de estas monedas, en el pedestal, hay un grabado que dice: <i>Vida y\
+      Muerte, dos caras de la misma moneda, al igual que esta sala en donde\
+      puede llegar tu final o seguir en la flor de la vida</i>. <br>\
+      Después de leer esto decides coger la <a href='escenamuerte'>\
+      moneda brillante</a>, la <a href='./monedaoxidada' class='once'> moneda oxidada\
+      </a> o <a href='escena5'>volver por dónde viniste</a></p>",
+      {
+            actions:{
+              "monedaoxidada": function(character, system, to) {
+                system.animateQuality("moneda", character.qualities.moneda+1);
+                system.setCharacterText("<p>Perfecto. Ahora tienes una moneda.</p>");
+              }
+
+            }
+      }
+    ),
+    escenamuerte: new undum.SimpleSituation(
+      "<h1> Tu final llegó antes de tiempo </h1>\
+      <p>A veces no te puedes fiar de las apariencias pues la moneda estaba\
+      brillante debido a un fuerte veneno que al tocarlo has fallecido\
+      instantáneamente, ya nunca sabrás quién te encerró allí ni lo que\
+      oculta este laberinto, a no ser que...</p> <br> <br> <br>\
+      <i>pss aquí, F5</i>"
+    ),
      todo: new undum.SimpleSituation(
          "<p>Two things can happen in a situation. The character either\
          <a href='links'>leaves</a> the situation and enters another one, or\

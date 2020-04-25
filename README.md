@@ -91,8 +91,8 @@ De aquí concluimos que con la participación de cada uno, alguno ha podido tene
 ## Memoria Sprint 3:
 
 ### Imagen de Product Backlog:
-<img src="capturaMemoria3.PNG">
-<img src="capturaMemoria3-2.PNG">
+<img src="CapturaMemoria3.PNG">
+<img src="CapturaMemoria3-2.PNG">
 
 ### [URL DE TABLERO EN TRELLO SUBTAREAS](https://trello.com/b/xcEfEX1f)
 

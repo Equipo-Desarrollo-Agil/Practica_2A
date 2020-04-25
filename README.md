@@ -87,3 +87,51 @@ Los requisitos que tenemos pensado implementar en el próximo Sprint son los rel
 
 
 De aquí concluimos que con la participación de cada uno, alguno ha podido tener una participación más alta que otro.
+
+## Memoria Sprint 3:
+
+### Imagen de Product Backlog:
+<img src="capturaMemoria3.png">
+<img src="capturaMemoria3-2.png">
+
+### [URL DE TABLERO EN TRELLO SUBTAREAS](https://trello.com/b/xcEfEX1f)
+
+Hemos elegido estas tareas porque nos resultaban interesantes para que del juego lo pudiese jugar más gente. Hemos descompuesto la historia de usuario sobre la traducción pero no la del login+contraseña porque ya estimabamos desde el principio que no nos iba a dar tiempo a realizarla. En este Sprint el Product Owner ha sido Álvaro Domingo Fuentes.
+
+### Product Backlog Refinement:
+<img src="CapturaPB.png">
+
+Nos dimos cuenta de que no nos daba tiempo a realizar alguna historia más para este sprint, debido a la historia login+usuario(Como usuario quiero acceder al juego mediante login+contraseña y darme de alta en el  sitio web).
+Por lo tanto el Producto Backlog no recibió cambios.
+
+### Sprint Review:
+
+#### ¿Qué funcionalidades se han “implementado” y cuáles no?
+
+Hemos implementado el juego en su versión en Inglés como bien nos dijo Don Victor Rivas en un correo cuando Abraham entró a formar parte del equipo de desarrollo.
+No hemos implementado la historia de Login+Contraseña después de varios intentos en su realización
+
+#### ¿Se ha revisado product backlog y estimaciones de PH y valor?
+
+Despues de revisar el Product Backlog hemos realizado 50 PH con un valor de 200.
+
+#### Con respecto al Equipo de programación: ¿qué ha ido bien, qué problemas surgieron y qué soluciones dimos?
+
+La implementación del juego en inglés no ha habido ningún problema pero, surgieron diversos problemas con la implementación de la historia de Login+Contraseña debido a que, nos encontrabamos con que nadie del equipo tenía conocimientos previos para la realización de esta misma, la búsqueda de información fue lenta y costosa y dado que no hemos podido dedicar todo el tiempo que nos hubiese gustado en el desarrollo de la misma, no logramos darle solución.
+
+#### ¿Por dónde seguir? ¿Qué es lo siguiente que aporta más valor al producto?
+
+En este caso damos por concluidas estas preguntas porque este sprint es el último. 
+
+### Sprint Retrospective:
+
+1.Como usuario, quiero poder jugar el juego completamente en inglés o en español: ha sido implementada por Álvaro, Teresa, y Ana, Traducida en su totalidad por Abraham.
+
+Todo esto se ha ido realizando equitatevamente entre todo el grupo a diferencía de las líneas que haya añadido cada componentes ya que:
+
+- Álvaro ha implementado el botón en la landing page para ofrecer la opción en inglés y ha implementado escenas en inglés
+- Teresa ha implementado escenas en inglés
+- Ana ha implementado escenas en inglés
+- Abraham ha traducido todas las escenas a inglés
+
+Toda nuestra comunicación se ha realizado mediante la plataforma Whatsapp y tablones en Trello. Para edición de texto se ha usado la aplicación Atom.

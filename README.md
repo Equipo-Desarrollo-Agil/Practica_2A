@@ -91,15 +91,15 @@ De aquí concluimos que con la participación de cada uno, alguno ha podido tene
 ## Memoria Sprint 3:
 
 ### Imagen de Product Backlog:
-<img src="capturaMemoria3.png">
-<img src="capturaMemoria3-2.png">
+<img src="capturaMemoria3.PNG">
+<img src="capturaMemoria3-2.PNG">
 
 ### [URL DE TABLERO EN TRELLO SUBTAREAS](https://trello.com/b/xcEfEX1f)
 
 Hemos elegido estas tareas porque nos resultaban interesantes para que del juego lo pudiese jugar más gente. Hemos descompuesto la historia de usuario sobre la traducción pero no la del login+contraseña porque ya estimabamos desde el principio que no nos iba a dar tiempo a realizarla. En este Sprint el Product Owner ha sido Álvaro Domingo Fuentes.
 
 ### Product Backlog Refinement:
-<img src="CapturaPB.png">
+<img src="CapturaPB.PNG">
 
 Nos dimos cuenta de que no nos daba tiempo a realizar alguna historia más para este sprint, debido a la historia login+usuario(Como usuario quiero acceder al juego mediante login+contraseña y darme de alta en el  sitio web).
 Por lo tanto el Producto Backlog no recibió cambios.
@@ -129,9 +129,9 @@ En este caso damos por concluidas estas preguntas porque este sprint es el últi
 
 Todo esto se ha ido realizando equitatevamente entre todo el grupo a diferencía de las líneas que haya añadido cada componentes ya que:
 
-- Álvaro ha implementado el botón en la landing page para ofrecer la opción en inglés y ha implementado escenas en inglés
+- Álvaro ha implementado el botón en la landing page para ofrecer la opción en inglés, ha implementado escenas en inglés y ha redactado la memoria.
 - Teresa ha implementado escenas en inglés
 - Ana ha implementado escenas en inglés
 - Abraham ha traducido todas las escenas a inglés
 
-Toda nuestra comunicación se ha realizado mediante la plataforma Whatsapp y tablones en Trello. Para edición de texto se ha usado la aplicación Atom.
+Toda nuestra comunicación se ha realizado mediante la plataforma Whatsapp y tablones en Trello. Para edición de texto se ha usado la aplicación Atom. También se ha utilizado Googe Meet para las conclusiones de la memoria y la daily scrum.

@@ -146,7 +146,7 @@ Toda nuestra comunicación se ha realizado mediante la plataforma Whatsapp y tab
 
 <img src="burnupPH.PNG">
 
-<img src="BurdownPH.PNG">
+<img src="BurndownPH.PNG">
 
 ### Gráficas burndown y burn-up del Valor asociado a las Historias de Usuario
 

@@ -135,3 +135,9 @@ Todo esto se ha ido realizando equitatevamente entre todo el grupo a diferencía
 - Abraham ha traducido todas las escenas a inglés
 
 Toda nuestra comunicación se ha realizado mediante la plataforma Whatsapp y tablones en Trello. Para edición de texto se ha usado la aplicación Atom. También se ha utilizado Googe Meet para las conclusiones de la memoria y la daily scrum.
+
+## Métricas del proyecto
+
+### Tabla para los datos de las gráficas del proyecto en su totalidad
+
+<img src="">

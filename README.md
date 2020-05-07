@@ -163,5 +163,11 @@ Toda nuestra comunicación se ha realizado mediante la plataforma Whatsapp y tab
 ### Gráficas burndown y burn-up de los puntos de historia o tareas del sprint 1
 
 
+### Gráficas burndown y burn-up de los puntos de historia o tareas del sprint 2
 
+
+### Gráficas burndown y burn-up de los puntos de historia o tareas del sprint 3
+
+
+### Conclusiones que sacáis a la vista de las tablas y gráficas obtenidas
 

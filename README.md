@@ -141,3 +141,27 @@ Toda nuestra comunicación se ha realizado mediante la plataforma Whatsapp y tab
 ### Tabla para los datos de las gráficas del proyecto en su totalidad
 
 <img src="">
+
+### Gráficas burndown y burn-up de los puntos de historia
+
+
+### Gráficas burndown y burn-up del Valor asociado a las Historias de Usuario
+
+
+### Tabla de velocidades
+
+
+### Tablas con los datos para la gráfica del sprint 1
+
+
+### Tablas con los datos para la gráfica del sprint 2
+
+
+### Tablas con los datos para la gráfica del sprint 3
+
+
+### Gráficas burndown y burn-up de los puntos de historia o tareas del sprint 1
+
+
+
+

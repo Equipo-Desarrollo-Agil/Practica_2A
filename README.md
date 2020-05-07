@@ -140,34 +140,53 @@ Toda nuestra comunicación se ha realizado mediante la plataforma Whatsapp y tab
 
 ### Tabla para los datos de las gráficas del proyecto en su totalidad
 
-<img src="">
+<img src="TablaGlobal.PNG">
 
 ### Gráficas burndown y burn-up de los puntos de historia
 
+<img src="BurnupPH.PNG">
+
+<img src="burdownPH.PNG">
 
 ### Gráficas burndown y burn-up del Valor asociado a las Historias de Usuario
 
+<img src="burnupVal.PNG">
+
+<img src="burdownVal.PNG">
 
 ### Tabla de velocidades
 
+<img src="tablavelocidades.PNG">
 
 ### Tablas con los datos para la gráfica del sprint 1
 
+<img src="TablaSprint1.PNG">
 
 ### Tablas con los datos para la gráfica del sprint 2
 
+<img src="TablaSprint2.PNG">
 
 ### Tablas con los datos para la gráfica del sprint 3
 
+<img src="TablaSprint3.PNG">
 
 ### Gráficas burndown y burn-up de los puntos de historia o tareas del sprint 1
 
+<img src="burdown1.PNG">
+
+<img src="burnup1.PNG">
 
 ### Gráficas burndown y burn-up de los puntos de historia o tareas del sprint 2
 
+<img src="burnup2.PNG">
+
+<img src="burndown2.PNG">
 
 ### Gráficas burndown y burn-up de los puntos de historia o tareas del sprint 3
 
+<img src="burndown3.PNG">
+
+<img src="burnup3.PNG">
 
 ### Conclusiones que sacáis a la vista de las tablas y gráficas obtenidas
 

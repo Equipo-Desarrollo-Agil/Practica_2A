@@ -144,15 +144,15 @@ Toda nuestra comunicación se ha realizado mediante la plataforma Whatsapp y tab
 
 ### Gráficas burndown y burn-up de los puntos de historia
 
-<img src="burnupPH.PNG">
+<img src="BurnupPH.PNG">
 
-<img src="BurndownPH.PNG">
+<img src="burdownPH.PNG">
 
 ### Gráficas burndown y burn-up del Valor asociado a las Historias de Usuario
 
 <img src="burnupVal.PNG">
 
-<img src="burndownVal.PNG">
+<img src="burdownVal.PNG">
 
 ### Tabla de velocidades
 
@@ -172,7 +172,7 @@ Toda nuestra comunicación se ha realizado mediante la plataforma Whatsapp y tab
 
 ### Gráficas burndown y burn-up de los puntos de historia o tareas del sprint 1
 
-<img src="burndown1.PNG">
+<img src="burdown1.PNG">
 
 <img src="burnup1.PNG">
 
@@ -190,3 +190,5 @@ Toda nuestra comunicación se ha realizado mediante la plataforma Whatsapp y tab
 
 ### Conclusiones que sacáis a la vista de las tablas y gráficas obtenidas
 
+Conclusion Global:
+Se puede ver en los graficos globales que los puntos de historia de nuestro proyecto tienen diferentes valores por punto dependiendo de la porcion del proyecto. Se ve que en el pricipio hay el valor mas alto que es producido por la cantidad menor de puntos de historia. El equipo hico la mayoria de los puntos en grupos de 7 dias, por lo que se ve actividad consistente por 7 dias, y despues muy poca actividad por 7 dias, que muestre el estilo de trabajo que se enfoca en planear el trabajo y concentrar las entregas en un periodo. En el final cos quedamos con 80 puntos por hacer, que es una tarea que no cuesta mucho mas trabajo que otras tareas, pero tiene sumamente menos valor aunque sea mas dificil.

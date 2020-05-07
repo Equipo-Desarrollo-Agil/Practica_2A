@@ -144,15 +144,15 @@ Toda nuestra comunicación se ha realizado mediante la plataforma Whatsapp y tab
 
 ### Gráficas burndown y burn-up de los puntos de historia
 
-<img src="BurnupPH.PNG">
+<img src="burnupPH.PNG">
 
-<img src="burdownPH.PNG">
+<img src="BurdownPH.PNG">
 
 ### Gráficas burndown y burn-up del Valor asociado a las Historias de Usuario
 
 <img src="burnupVal.PNG">
 
-<img src="burdownVal.PNG">
+<img src="burndownVal.PNG">
 
 ### Tabla de velocidades
 
@@ -172,7 +172,7 @@ Toda nuestra comunicación se ha realizado mediante la plataforma Whatsapp y tab
 
 ### Gráficas burndown y burn-up de los puntos de historia o tareas del sprint 1
 
-<img src="burdown1.PNG">
+<img src="burndown1.PNG">
 
 <img src="burnup1.PNG">
 

@@ -190,8 +190,12 @@ Toda nuestra comunicación se ha realizado mediante la plataforma Whatsapp y tab
 
 ### Conclusiones que sacáis a la vista de las tablas y gráficas obtenidas
 
-Conclusion Global:
-Se puede ver en los graficos globales que los puntos de historia de nuestro proyecto tienen diferentes valores por punto dependiendo de la porcion del proyecto. Se ve que en el pricipio hay el valor mas alto que es producido por la cantidad menor de puntos de historia. El equipo hico la mayoria de los puntos en grupos de 7 dias, por lo que se ve actividad consistente por 7 dias, y despues muy poca actividad por 7 dias, que muestre el estilo de trabajo que se enfoca en planear el trabajo y concentrar las entregas en un periodo. En el final cos quedamos con 80 puntos por hacer, que es una tarea que no cuesta mucho mas trabajo que otras tareas, pero tiene sumamente menos valor aunque sea mas dificil.
+Conclusión Global:
 
-Conclusion sprints: 
-El primer sprint fue nuestra primer experiencia con el trabajo, y por eso en el primer sprint se hicieron relativamente pocos puntos de historia creando la base del juego, lo que se termino muy rapido. Al empezar el segundo sprint, ya teniamos mas experiencia y mas idea del paso de trabajo del grupo, por lo cual se agregaron muchos mas puntos de historia, y ademas eran trabajos con mas variacion de dificultad. Ya que el valor de los trabajos empezo a bajar, y muchos de los cambios no eran itnegrales al juego, se hicieron menos puntos en el ultimo sprint, pero se enfoco el tiempo en asegurar que todo este refinado y bien hecho. En total, el proceso de los sprints fue un aprendisaje que nos ayudo optimizar el paso y organizacion de trabajo entre todos.
+Se puede ver en los gráficos globales que los puntos de historia de nuestro proyecto tienen diferentes valores por punto dependiendo de la porción del proyecto. Se ve que en el principio el valor es más alto que es producido por la cantidad menor de puntos de historia. El equipo hizo la mayoría de los puntos en grupos de 7 días, por lo que se ve actividad consistente por 7 días, y despuéstuvimos muy poca actividad por 7 días, muestra el estilo de trabajo que se enfoca en planear el trabajo y concentrar las entregas en un período. Al final nos quedamos con 80 puntos por hacer, que es una tarea que no cuesta mucho trabajo como otras tareas, pero tiene sumamente menos valor aunque sea más difícil.
+
+Conclusión sprints: 
+
+El primer Sprint fue nuestra primer experiencia con el trabajo, y por eso en el primer sprint se hicieron relativamente pocos puntos de historia creamos la base del juego, se fue desarrolando muy rápido. 
+Al empezar el segundo Sprint, ya teniamos más experiencia y más idea a la hora de trabajar en grupo, por lo cual se agregaron muchos más puntos de historia, y además eran trabajos con más variación de dificultad. Ya que el valor de los trabajos empezo a bajar, y muchos de los cambios no eran integrables al juego.
+Se hicieron menos puntos en el último Sprint, pero se enfocó el tiempo en asegurar que todo este refinado estuviera bien hecho. En total, el proceso de los sprints fue un aprendisaje que nos ayudo optimizar el paso y organizacion de trabajo entre todos.
